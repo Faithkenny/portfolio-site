@@ -8,6 +8,7 @@
     --video-wrapper-width: 380px;
     --video-wrapper-height: 320px;
     --footer-color:#FBFBFB;
+    --dark-mode-color: undefined;
 }
 
 html, body {
@@ -29,7 +30,7 @@ body {
     /* margin: 0 auto; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    /* font-weight: <weight>; */
     font-style: normal;
     font-size: 1.6rem; 
 }
@@ -163,7 +164,7 @@ div.video-and-caption {
     gap: 14px;
 }
 .video-one {
-    /* flex-grow: 1; */
+    flex-grow: 1;
     /* background-color: #1400FF; */
 }
 .video {
