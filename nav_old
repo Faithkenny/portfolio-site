@@ -1,0 +1,91 @@
+/* Nav + Header
+-----------------------------------------------*/
+header.nav {
+    background-color: var(--white-color);
+    border-bottom: 1px solid transparent; /* Set a transparent border */
+    border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
+    border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
+    position: sticky;
+    top: 0;
+}
+nav#v1{
+    display: none;
+    flex-direction: row;
+    background-color: var(--white-color);
+    padding: 8px;
+    letter-spacing: -0.25px;
+    /* align-items: baseline; */
+    width: 50%;
+    justify-content: center;
+    border: 1px solid purple;
+}
+nav figure {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid blue;
+}
+nav figure img{
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--gray-700);
+}
+nav figure figcaption {
+    color: var(--accent-text);
+    font-weight: 500;
+}
+nav aside {
+    display: inline-flex;
+    gap: 16px;
+    border: 1px solid red;
+}
+aside ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+aside ul a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+li#divider {
+    color: hsla(224, 72%, 4%, 0.05);
+}
+aside button {
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--cta-color);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+/* Header nav ends here 
+-------------------------------------------------- */
+
+
+
+
+
+
+
+    <header role="navigation" class="nav">
+        <nav id="v1" class="main-nav">
+
+            <figure>
+              <img src="media/thumbnail-32px.png" alt="Faith Kenny's avatar">
+              <figcaption>Faith Kenny</figcaption>
+            </figure>
+
+          <aside>
+            <ul>
+              <li><a href="#">Work for previous employers</a></li>
+              <li id="divider">|</li>
+              <li><a href="#">About me</a></li>
+            </ul>
+            <button>Copy email</button>
+          </aside>
+        </nav>
+    </header>
