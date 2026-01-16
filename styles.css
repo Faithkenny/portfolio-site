@@ -110,7 +110,7 @@ nav {
     /* padding: 1rem; */
     /* height: 48px; */
     background-color: hsla(0, 0%, 100%, 0.5);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(6px);
     border-bottom: 1px solid transparent; /* Set a transparent border */
     border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
     border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
@@ -268,7 +268,7 @@ section.filters {
 -----------------------------------------------*/
 main{
     /* max-width: 1184px; */
-    max-width: 1184px;
+    max-width: 1190px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -282,6 +282,7 @@ section.work {
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
     /* border: 1px solid red; */
 
     /* flex: 1 1 auto; */
@@ -291,13 +292,13 @@ section.work div {
     /* height: 320px; */
     height: 214px;
     border-radius: 4px;
-    background-color: var(--case-study-bg);
+    /* background-color: var(--case-study-bg); */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
-    /* border: 1px solid blue; */
+    border: 1px solid hsla(20, 6%, 90%, 0.5);
+    box-sizing: border-box;
 
         /* flex: 1 1 auto; */
 }
@@ -328,8 +329,8 @@ section.case-study div {
 section.case-study div:hover {
     opacity: 100%;
     /* filter: grayscale(00%); */
-    border: 2px solid hsla(0, 0%, 94%, 1);
-    box-sizing: border-box;
+    /* border: 2px solid hsla(0, 0%, 94%, 1); */
+    /* box-sizing: border-box; */
 
 }
 
