@@ -139,7 +139,6 @@ nav {
     width: 24px;
     height: 24px;
     border: 2px solid hsla(224, 72%, 4%, 0.15);
-;
 }
 .logo p {
     color: var(--primary-text-color);
@@ -164,7 +163,7 @@ aside {
     color: var(--primary-text-color);
     text-decoration: none;  
 }
-li#divider {
+li.divider {
     color: hsla(224, 72%, 4%, 0.05);
 }
 .btns {
@@ -195,7 +194,18 @@ section#page-title {
     align-items: center;
     gap: 0.4rem;
     width: 100%;
+    
     /* border: 1px solid red; */
+}
+::selection {
+  background-color: var(--cyan-500); /* The background color of the selected text */
+  /* color: var(--primary-text-color);            The text color of the selected text */
+}
+
+/* For compatibility with older Firefox versions */
+::-moz-selection {
+  background-color: yellow;
+  color: black;
 }
 h1 {
     color: var(--gray-900);
@@ -301,7 +311,9 @@ section.work div {
 section.case-study div {
     width: 782px;
     overflow: hidden;
-    background-color: black;
+    /* border: 2px solid hsla(224, 72%, 4%, 0); */
+    /* box-sizing: border-box; */
+    /* background-color: black; */
     /* border: 1px solid red; */
 
         /* flex: 1 1 auto; */
@@ -315,8 +327,8 @@ section.case-study div {
 
 section.case-study div:hover {
     opacity: 100%;
-    filter: grayscale(00%);
-    border: 2px solid rgb(221, 221, 221);
+    /* filter: grayscale(00%); */
+    border: 2px solid hsla(0, 0%, 94%, 1);
     box-sizing: border-box;
 
 }
