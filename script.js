@@ -16,6 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   
 
+  // This didn't work. I was trying an hover effect
+  const imgSwap = document.querySelector(".trial");
+  window.addEventListener('mouseenter', (e) => {
+    imgSwap.removeAttribute("src", "media/ROPA-for-the-new-website.png" )
+  });
+
 });
 
 

@@ -122,6 +122,8 @@ nav {
     justify-content: space-around;  
     margin: 0 32px 16px;
     border-bottom: 1px solid red;
+    font-size: 1.4rem;
+
 }
 .logo {
     display: inline-flex;
@@ -142,6 +144,7 @@ nav {
 .logo p {
     color: var(--primary-text-color);
     font-weight: 500;
+
 }
 aside {
     display: flex;
@@ -266,7 +269,7 @@ main{
 section.work {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.6rem;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
@@ -297,8 +300,25 @@ section.work div {
 }
 section.case-study div {
     width: 782px;
+    overflow: hidden;
+    background-color: black;
+    /* border: 1px solid red; */
+
         /* flex: 1 1 auto; */
 }
+.trial {
+    width: 100%;
+    /* opacity: 25%; */
+    /* filter: grayscale(100%); */
+}
 
+
+section.case-study div:hover {
+    opacity: 100%;
+    filter: grayscale(00%);
+    border: 2px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+
+}
 
 
