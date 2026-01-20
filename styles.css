@@ -255,9 +255,6 @@ section.filters {
     margin-bottom: 1.2rem;
     /* border: 1px solid red; */
 }
-.select-filter {
-    /* margin-left: 1.6rem; */
-}
 .grid-list-switch {
     /* margin-right: 1.6rem; */
     display: inline-flex;
@@ -307,9 +304,6 @@ main a {
     display: block;
     text-decoration: none;
 }
-main a:hover {
-
-}
 section.work div {
     /* width: 380px; */
     /* height: 320px; */
@@ -322,9 +316,11 @@ section.work div {
     overflow: hidden;
     border: 1px solid hsla(20, 6%, 90%, 0.2);
 }
-section.work div:hover {
-    /* border: 2px solid rgb(106, 31, 31); */
+section.work:hover img,section.work:hover video{
+    /* transform: scale(1.015); */
+    /* transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), transform 0.5s ease-in-out; */
 }
+
 .work p {
     color: var(--secondary-text-color);
     font-size: var(--secondary-text-size);
@@ -419,6 +415,8 @@ h2 {
     inset: 0px;
     opacity: 1;
     display: none;
+    max-width: 1184px; 
+    margin: 0 auto; /* Ensures the modal stays in the center when it reaches its max width */
 }
 .modal_absolute {
     position: absolute;
