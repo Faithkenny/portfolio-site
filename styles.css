@@ -55,9 +55,11 @@ img {
     --gray-700: hsla(0, 0%, 39%, 1);
     --gray-500: hsla(0, 0%, 62%, 1);
     --gray-300: hsla(20, 6%, 90%, 1);
+    --gray-100: rgb(240, 240, 240);
     --coolgray-500: hsla(216, 15%, 34%, 1);
     --gray-0: #fff;
     --cyan-500: hsla(188, 100%, 50%, 1);
+    --cyan-700:  rgb(3, 178, 237);
     
     --primary-text-color: var(--gray-700);
     --secondary-text-color: var(--gray-500);
@@ -106,7 +108,7 @@ body {
     align-items: center;
 }
 
-nav {
+nav.header {
     width: 100%;
     /* padding: 1rem; */
     /* height: 48px; */
@@ -144,18 +146,17 @@ nav {
 .logo p {
     color: var(--primary-text-color);
     font-weight: 500;
-
 }
 aside {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 2rem;
     margin-right: 1.6rem;
     /* border: 1px solid blue; */
 }
 .nav-links {
-    gap: 12px;
+    gap: 1.4rem;
     list-style-type: none;
     display: flex;
     /* border: 1px solid red; */
@@ -180,11 +181,21 @@ li.divider {
     background-color: var(--cta-color);
     padding: 5px 10px;
     display: flex;
-    align-items: center;
+    width: 9rem;
+    justify-content: center;
     border-radius: 4px;
     color: var(--gray-900);
 
 }
+.btns button {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.btns button.is-changing {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
 
 
 /* Page title 
@@ -238,7 +249,7 @@ h1 {
 section.filters {
     max-width: 1184px;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.2rem;
@@ -271,6 +282,7 @@ section.filters {
 -----------------------------------------------*/
 main{
     /* max-width: 1184px; */
+    margin-top: 2rem;
     max-width: 1190px;
     display: flex;
     flex-direction: row;
@@ -279,18 +291,25 @@ main{
     gap: 20px;
     /* border: 1px solid red; */
 }
-section.work {
+section.work, section.work a{
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
+    cursor: pointer;
     /* border: 1px solid red; */
 
     /* flex: 1 1 auto; */
 }
+main a {
+    display: block;
+    text-decoration: none;
+}
+main a:hover {
 
+}
 section.work div {
     /* width: 380px; */
     /* height: 320px; */
@@ -310,6 +329,10 @@ section.work div:hover {
     color: var(--secondary-text-color);
     font-size: var(--secondary-text-size);
     margin: 0;
+    display: flex;
+    gap: 0.6rem;
+    /* justify-content: center; */
+    align-items: center;
     /* border: 1px solid red; */
 
 }
@@ -389,7 +412,7 @@ h2 {
     /* -webkit-backdrop-filter: blur(12px); */
 }
 
-.modal, .vanitylvrsModal, .wallpapersModal, .photographyWebsiteModal, .qacehomesModal {
+.modal {
     position: fixed;
     z-index: 999;
     pointer-events: none;
@@ -427,8 +450,31 @@ h2 {
 .video_text_parent {
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 2rem;
     padding: 2.8rem 2.4rem 1.2rem;    
+}
+.video_text_parent div.btns {
+    position: absolute;
+    right: 24px;
+    bottom: 56px;
+    width: auto;
+}
+.video_text_parent .btns button {
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--cta-color);
+    padding: 10px 14px;
+    display: flex;
+    width: auto;
+    gap: 0.6rem;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--gray-900);
+}
+.video_text_parent .btns:hover button {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-500);
 }
 .mediaWrapper {
     /* transform: none; */
@@ -474,15 +520,24 @@ h2 {
     width: 75%;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0rem;
+    margin: 1.2rem 0;
 }
 .textWrapper h2 {
     font-size: 2.2rem;
+    line-height: 1.8rem;
     margin: 0;
 }
 .textWrapper p{
-    line-height: 2.2rem;
+    line-height: 2.4rem;
     color: var(--gray-700);
+    margin-bottom: 0.8rem;
+}
+.textWrapper ul {
+    margin: 0;
+    font-size: inherit;
+    line-height: 2.6rem;
+    list-style: decimal;
 }
 .closeButton {
     position: absolute;
@@ -515,4 +570,40 @@ h2 {
 .closeButton svg {
     stroke-width: 1.8px;
     stroke: var(--gray-900);
+}
+
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    opacity: 0.8;
+}
+
+
+footer nav {
+    width: 100%;
+    /* padding: 1rem; */
+    /* height: 48px; */
+    background-color: var(--gray-100);
+    backdrop-filter: blur(6px);
+    /* border-top: 1px solid transparent; Set a transparent border */
+    border-image: linear-gradient(to right, hsla(33, 97%, 60%, 0.5), hsla(330, 99%, 62%, 0.5), hsla(267, 96%, 63%, 0.5)) 1;
+    border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-around;  
+    margin-top: 2rem;
+    font-size: 1.4rem;
+
+}
+footer p, ul  {
+    color: var(--secondary-text-color);
+    font-size: var(--secondary-text-size);
+    /* font-weight: 500; */
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
 }

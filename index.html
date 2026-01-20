@@ -14,18 +14,27 @@
 
 
 
-  <nav>
+  <nav class="header">
       <div class="logo"><img src="media/thumbnail-32px.png" alt="Faith Kenny's avatar"><p>Faith Kenny</p></div>
 
         <aside>
-          <ul class="nav-links">
+          <!-- <ul class="nav-links">
             <li><a href="">AI enablement</a></li>
             <li class="divider"><a href=""></a>|</li>
             <li><a href="">Work for previous employers</a></li>
             <li class="divider"><a href=""></a>|</li>
             <li><a href="">About me</a></li>
+          </ul> -->
+          <ul class="nav-links">
+            <li><a href="">Download CV</a></li>
+            <li class="divider">|</li>
+            <li><a href="">About me</a></li>
+            <li class="divider">|</li>
+            <!-- <li><a href="">Work for previous employers</a></li> -->
+            <!-- <li class="divider">|</li> -->
+            <li><a href="">+1 (415) 312-7406</a></li>
           </ul>
-          <div class="btns"><button>Copy email</button></div>
+          <div class="btns"><button class="email">Copy email</button></div>
         </aside>
 
   </nav>
@@ -60,6 +69,53 @@ data-driven flows, & systems that achieve product goals</h1>
 
 <div class="overlay"></div>   
 
+<div class="modal designChallengeModal slideShow">
+  <div class="modal_absolute">
+    <div class="modalContent_buttonWrapper">
+      <div class="video_text_parent">
+
+        <div class="mediaWrapper">
+          <div class="images-wrapper">
+            <img src="media/deluxe-holiday-homes/01.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/02.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/03.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/04.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/05.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/06.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/07.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/08.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/09.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+            <img src="media/deluxe-holiday-homes/10.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+          </div> 
+        </div>
+
+        <div class="textWrapper">
+          <h2 class="mediaTitle">Product design challenge - in the age of AI</h2>
+          <p>I analyzed the brief using the 5W1H Product thinking framework. First task was to uncover the knowns, and unknowns. Some desktop research informed my hypotheses and assumptions for the unknowns. I then charted out the userflow in Figjam. Finally, here's my process for using Figma Make, a GenAI visual design tool for building prototypes: 
+          </p>
+          <ul>
+            <li>Prompt my mapped userflow,</li>
+            <li>Keep refining the prompt,</li>
+            <li>Select one outcome, & improve the visual polish in Figma</li>
+          </ul>
+         </div>
+
+        <div class="btns"><a href="https://www.figma.com/deck/uwct6xX1d1VQcdUkJx5OBj/Faith-Kenny---Deluxe-Holiday-Homes?node-id=8-6493&t=kQCUctbAUUvHRSEg-1" target="_blank" rel="noopener noreferrer">
+          <button class="email">Interactive prototype presentation<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="hsla(234, 36%, 5%, 1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></button>
+        </a></div>
+
+      </div>
+      <button class="closeButton" tabindex="0" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+  </div>
+</div>
+
+</div>
 
 <div class="modal vanitylvrsModal">
   <div class="modal_absolute">
@@ -70,10 +126,10 @@ data-driven flows, & systems that achieve product goals</h1>
           <video autoplay src="media/VanityLvrs-HighRes.mp4" class="video-media" loop></video>
 
           <div class="images-wrapper">
-            <img src="media/VanityLvrs-image-1.png" alt="VanityLvrs" loading="lazy">
-            <img src="media/VanityLvrs-image-2.png" alt="VanityLvrs" loading="lazy">
-            <img src="media/VanityLvrs-image-3.png" alt="VanityLvrs" loading="lazy">
-            <img src="media/VanityLvrs-image-4.png" alt="VanityLvrs" loading="lazy">                
+            <img src="media/VanityLvrs-image-1.png" alt="VanityLvrs" >
+            <img src="media/VanityLvrs-image-2.png" alt="VanityLvrs" >
+            <img src="media/VanityLvrs-image-3.png" alt="VanityLvrs" >
+            <img src="media/VanityLvrs-image-4.png" alt="VanityLvrs" >                
           </div> 
         </div>
 
@@ -154,9 +210,9 @@ data-driven flows, & systems that achieve product goals</h1>
 
         <div class="mediaWrapper">
           <video autoplay src="media/qacehomes-PMS.mp4" class="video-media" loop controls></video>
-          <img src="media/qacehomes-1.jpeg" alt="OKFN.org's Open Data Editor team photo cover" loading="lazy">
-          <video autoplay src="media/qacehomes-marketplace.mp4" class="video-media" loop></video>
-          <img src="media/qacehomes-Homepage.jpg" alt="OKFN.org's Open Data Editor team photo cover" loading="lazy">
+          <img src="media/qacehomes-1.jpeg" alt="OKFN.org's Open Data Editor team photo cover" >
+          <video autoplay src="media/qacehomes-marketplace.mp4" class="video-media" loop controls></video>
+          <img src="media/qacehomes-Homepage.jpg" alt="OKFN.org's Open Data Editor team photo cover" >
         </div>
 
         <div class="textWrapper">
@@ -175,103 +231,120 @@ data-driven flows, & systems that achieve product goals</h1>
 
 </div>
 
+<div class="modal okfnModal slideShow">
+  <div class="modal_absolute">
+    <div class="modalContent_buttonWrapper">
+      <div class="video_text_parent">
 
-<!-- work 1 -->
-        
-  <section class="case-study work">
+        <div class="mediaWrapper">
+          <video controls autoplay src="media/okfn-7-Errors-report-iteration-1.mp4" class="video-media" loop></video>
+
+          <div class="images-wrapper">
+            <img src="media/okfn-2.jpg" alt="VanityLvrs" >
+            <img src="media/okfn-old-ode.jpg" alt="VanityLvrs" >
+            <video autoplay src="media/okfn-4-sidebar-collapse.mp4" class="video-media" loop></video>               
+            <video autoplay src="media/okfn-3upload-flow-v2.mp4" class="video-media" loop></video>  
+            <img src="media/okfn-5-modal-button-states.jpg" alt="VanityLvrs" >
+            <img src="media/okfn-5-modal-button-states.jpg" alt="VanityLvrs"/>
+            <video autoplay src="media/okfn-4-editing-and-correcting-an-error-cell" class="video-media" loop></video>               
+            <video autoplay src="media/okfn-3upload-flow-v2.mp4" class="video-media" loop></video>
+            <video autoplay src="media/okfn-6.mp4" class="video-media" loop></video>              
+          </div> 
+        </div>
+
+        <div class="textWrapper">
+          <h2 class="mediaTitle">OKFN - Rebuilding the ODE</h2>
+          <p>OKFN.org is a EU-based Gov-tech nonprofit that advocates for Open knowledge through Data, community, and software. I was hired as the UX/UI Consultant to lead the design while working alongside a cross-functional tean of PMs and Engineers on the new vision of the Open Data Editor - a Data management desktop app retargeted at non-technical data professionals.
+          </p>
+          <ul>
+            <li>I delivered new dashboards & a refreshed design system</li>
+            <li>There's a new free course on the ODE</li>
+            <li>Advocacy efforts with new training camps for Journalists</li>
+          </ul>
+         </div>
+
+        <div class="btns"><a href="https://iamfaithkenny.framer.website/okfn" target="_blank" rel="noopener noreferrer">
+          <button class="email">Read case study<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="hsla(234, 36%, 5%, 1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></button>
+        </a></div>
+
+      </div>
+      <button class="closeButton" tabindex="0" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<!-- Works in main -->
+
+  <section class="designChallenge case-study work">
+  <a href="https://www.figma.com/deck/uwct6xX1d1VQcdUkJx5OBj/Faith-Kenny---Deluxe-Holiday-Homes?node-id=8-6493&t=Ut16i3GPenfoNcXp-1" target="_blank" rel="noopener noreferrer">
     <div>
-  <img src="media/ROPA-for-the-new-website.png" width="782" height="214" alt="Transcend.io's ROPA case study" loading="lazy" class="trial">
+    <img src="media/design-challenge-case-study.jpg" width="782" height="214" alt="Transcend.io's ROPA case study"  class="trial">
     </div>
-    <p id="work-1">Transcend.io's ROPA</p>
+    <p id="work-4">AI fluency: Solving a Design challenge<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round"/> </svg>--></p>
+  </a>
   </section>
 
-
-<!-- work 2 -->
   <section class="wallpapers work">
     <div>
-      <video autoplay muted loop src="media/wallpapers.mp4" aria-hidden="true" aria-labelledby="work-2" loading="lazy"></video>
+      <video autoplay muted loop src="media/wallpapers.mp4" aria-hidden="true" aria-labelledby="work-2" ></video>
     </div>
     <p id="work-2">Screensavers</p>
     <dialog></dialog>
   </section>
 
-<!-- work 3 -->
-  <section class="work">
-  <div>
-  <img src="media/folio-image.jpg" alt="OKFN.org's Open Data Editor team photo cover" loading="lazy">
-  </div>
-  <p>OKFN</p>
-  <dialog></dialog>
-  </section>
-
-<!-- work 4 -->
-  <section class="case-study work">
-  <div>
-  <img src="media/design-challenge-case-study.jpg" width="782" height="214" alt="Transcend.io's ROPA case study" loading="lazy" class="trial">
-  </div>
-  <p id="work-4">AI fluency: Solving a Design challenge</p>
-  <dialog></dialog>
-  </section>
-
-
-<!-- work 6 -->
-  <section class="work">
-  <div>
-    <video autoplay muted loop src="media/transcend.mp4" aria-hidden="true" aria-labelledby="work-6" loading="lazy"></video>
-  </div>
-  <p id="work-6">Transcend - enterprise B2B Data Governance</p>
-  <dialog></dialog>
-  </section>
-
-<!-- work 5 -->
-  <section class="qacehomes work">
-  <div>
-  <img class="case-1" src="media/qacehomes.jpg" alt="Qacehome's cover photo" loading="lazy">
-  </div>
-  <p id="work-5">Qacehomes - real estate</p>
-  <dialog></dialog>
-  </section>
-
-  <section class="work vanitylvrs">
+  <section class="vanitylvrs work">
     <div>
-      <video autoplay muted loop src="media/vanityLvrs.mp4" aria-hidden="true" aria-labelledby="work-7" loading="lazy"></video>
+      <video autoplay muted loop src="media/vanityLvrs.mp4" aria-hidden="true" aria-labelledby="work-7" ></video>
     </div>
     <p id="work-7">Vanitylvrs</p>
   </section> 
 
 
-
-  <section class="case-study work">
-    <div>
-
-    </div>
-    <p id="work-8">Transcend.io's ROPA</p>
+  <section class="okfn case-study work">
+      <div>
+        <img src="media/okfn-homepage.jpg" width="782" height="214" alt="Transcend.io's ROPA case study"  class="trial">
+      </div>
+      <p id="work-1">OKFN.org's Open Data Editor<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round"/> --></svg></p>
   </section>
-  <dialog></dialog>  
 
-  <section class="ca work">
-    <div>
-    <video autoplay muted loop src="media/partccloud.mp4" aria-hidden="true" aria-labelledby="work-8" loading="lazy"></video>
-    </div>
-    <p id="work-9">Partcloud - software agency</p>
-  </section> 
+    <section class="ropa case-study work">
+    <a href="https://www.figma.com/proto/Dg91SPMY7kmImjBqHL1Z24/folio?node-id=7697-148769&t=k9xcG7TO9XGylpya-0&scaling=min-zoom&content-scaling=fixed&page-id=3048%3A8709&starting-point-node-id=7697%3A148769" target="_blank" rel="noopener noreferrer">
+      <div>
+        <img src="media/ROPA-for-the-new-website.png" width="782" height="214" alt="Transcend.io's ROPA case study"  class="trial">
+      </div>
+      <p id="work-1">Transcend.io's ROPA<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+    </a>
+  </section>
 
-
-  <section class="photographyWebsite work">
+  <section class="qacehomes work">
   <div>
-  <img class="case-1" src="media/interactions.jpg" alt="Interactions' cover photo" loading="lazy">
+  <img class="case-1" src="media/qacehomes.jpg" alt="Qacehome's cover photo" >
   </div>
-  <p id="work-11">Photography website</p>
+  <p id="work-5">Qacehomes - real estate</p>
   <dialog></dialog>
   </section>
 
-<section class="case-study work">
-<div>
+  <section class="work">
+  <div>
+    <video autoplay muted loop src="media/transcend.mp4" aria-hidden="true" aria-labelledby="work-6" ></video>
+  </div>
+  <p id="work-6">Transcend - enterprise B2B Data Governance<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round"/> --></svg></p>
+  <dialog></dialog>
+  </section>
 
-</div>
-<p id="work-4">AI fluency: Solving a Design challenge</p>
-<dialog></dialog>
-</section>
+
+
 
 
     </main>
@@ -280,11 +353,28 @@ data-driven flows, & systems that achieve product goals</h1>
       <nav>
         <p>&copy; 2026</p>
         <p>
-          No AI was used in the content or development of this site
+          No AI was used in the content or development of this website.
         </p>
-        <ul>
-          <li>Last visitor: from New York</li>
-          <li>Counting local time</li>
+        <ul>          
+          <li>
+            <a href="https://www.linkedin.com/in/faithkenny" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 17V13.5V10" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 17V13.75M11 13.75V10M11 13.75C11 10 17 10 17 13.75V17" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 7.01013L7.01 6.99902" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.x.com/iamfaithkenny" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M14.0166 17.307L3.12773 3.30697C2.87229 2.97854 3.10633 2.5 3.52241 2.5H5.58888C5.74317 2.5 5.88883 2.57123 5.98356 2.69303L16.8724 16.693C17.1279 17.0215 16.8938 17.5 16.4778 17.5H14.4113C14.257 17.5 14.1113 17.4287 14.0166 17.307Z" stroke="#9E9E9E"/>
+              <path d="M16.6668 2.5L3.3335 17.5" stroke="#9E9E9E" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </li>
+
         </ul>
       </nav>
     </footer>

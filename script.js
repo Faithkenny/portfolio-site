@@ -1,8 +1,41 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+
+
+  const emailBtn = document.querySelector(".email");
+
+emailBtn.addEventListener("click", async () => {
+  await navigator.clipboard.writeText("heyfaith@iamfaithkenny.com");
+
+  emailBtn.classList.add("is-changing");
+
+  setTimeout(() => {
+    emailBtn.textContent = "Copied!";
+    emailBtn.classList.remove("is-changing");
+  }, 150);
+
+  setTimeout(() => {
+    emailBtn.classList.add("is-changing");
+    setTimeout(() => {
+      emailBtn.textContent = "Copy email";
+      emailBtn.classList.remove("is-changing");
+    }, 150);
+  }, 2000);
+});
+
   
-;
+  // const emailBtn = document.querySelector(".email");
+
+  // Use the Clipboard API to write the text
+  // emailBtn.addEventListener("click", (e) => {
+  //   navigator.clipboard.writeText("heyfaith@iamfaithkenny.com");
+  //   emailBtn.textContent = "Copied!"
+  // });
+
+
+
+  
   // add width - 184 to every thumbnail
 
   const images = document.querySelectorAll("div img");
@@ -36,6 +69,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // Each work item
+
+  // need to grab the video so I can set the autoplay to true
+  const designChallenge = document.querySelector(".designChallenge");
+  const designChallengeModal = document.querySelector(".designChallengeModal");
+  // const designChallengeVideo = document.querySelector(".designChallengeModal video");
+  const designChallengeModalCloseBtn = document.querySelector(".designChallengeModal .closeButton");
+
+  const okfn = document.querySelector(".okfn");
+  const okfnModal = document.querySelector(".okfnModal");
+  const okfnVideo = document.querySelector(".okfnModal video");
+  const okfnModalCloseBtn = document.querySelector(".okfnModal .closeButton");
+
   const vanitylvrs = document.querySelector(".vanitylvrs");
   const vanitylvrsModal = document.querySelector(".vanitylvrsModal");
   const vanitylvrsModalVideo = document.querySelector(".vanitylvrsModal video");
@@ -55,6 +100,34 @@ window.addEventListener('DOMContentLoaded', () => {
   const qacehomesModal = document.querySelector(".qacehomesModal");
   const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
   const qacehomesModalCloseBtn = document.querySelector(".qacehomesModal .closeButton");
+
+  
+okfn.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".okfnModal .modalContent_buttonWrapper").style.width = "auto";
+  okfnVideo.setAttribute("autoplay", "true");
+  okfnModal.style.display = "flex";
+  overlay.style.display = "flex";
+});
+
+okfnModalCloseBtn.addEventListener("click", (e) => {
+  okfnModal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+  
+designChallenge.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
+  // designChallengeVideo.setAttribute("autoplay", "true");
+  designChallengeModal.style.display = "flex";
+  overlay.style.display = "flex";
+});
+
+designChallengeModalCloseBtn.addEventListener("click", (e) => {
+  designChallengeModal.style.display = "none";
+  overlay.style.display = "none";
+});
 
 
 vanitylvrs.addEventListener("click", (e) => {
