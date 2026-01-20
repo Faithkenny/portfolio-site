@@ -91,11 +91,6 @@ emailBtn.addEventListener("click", async () => {
   const wallpapersModalVideo = document.querySelector(".wallpapersModal video");
   const wallpapersModalCloseBtn = document.querySelector(".wallpapersModal .closeButton");
 
-  const photographyWebsite = document.querySelector(".photographyWebsite");
-  const photographyWebsiteModal = document.querySelector(".photographyWebsiteModal");
-  const photographyWebsiteModalVideo = document.querySelector(".photographyWebsiteModal video");
-  const photographyWebsiteModalCloseBtn = document.querySelector(".photographyWebsiteModal .closeButton");
-
   const qacehomes = document.querySelector(".qacehomes");
   const qacehomesModal = document.querySelector(".qacehomesModal");
   const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
@@ -155,18 +150,6 @@ wallpapersModalCloseBtn.addEventListener("click", (e) => {
   overlay.style.display = "none";
 });
 
-
-photographyWebsite.addEventListener("click", (e) => {
-  e.preventDefault();
-  photographyWebsiteModalVideo.setAttribute("autoplay", "true");
-  photographyWebsiteModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
-
-photographyWebsiteModalCloseBtn.addEventListener("click", (e) => {
-  photographyWebsiteModal.style.display = "none";
-  overlay.style.display = "none";
-});
 
 
 qacehomes.addEventListener("click", (e) => {
