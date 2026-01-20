@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const emailBtn = document.querySelector(".email");
 
 emailBtn.addEventListener("click", async () => {
-  await navigator.clipboard.writeText("heyfaith@iamfaithkenny.com");
+  await navigator.clipboard.writeText("work@iamfaithkenny.com");
 
   emailBtn.classList.add("is-changing");
 
