@@ -123,9 +123,8 @@ nav.header {
     flex-direction: row;
     align-items: center;  
     justify-content: space-around;  
-    margin: 0 32px 16px;
-    border-bottom: 1px solid red;
-    font-size: 1.4rem;
+    margin: 0 20px 10px;
+    font-size: 1.0rem;
 
 }
 .logo {
@@ -139,17 +138,20 @@ nav.header {
 }
 .logo img {
     border-radius: 999px;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border: 1.5px solid hsla(224, 72%, 4%, 0.15);
 }
 .logo p {
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
+
+Everything to the right of the logo
+
 aside {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: row;
     gap: 2rem;
@@ -229,16 +231,16 @@ h1 {
     font-weight: 600;
     width: 80%;
     text-align: center;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     margin: 0;
 
 }
 #page-title p {
-    font-size: 14px;
+    font-size: 12px;
     width: 421px;
     color: hsla(0, 0%, 39%, 1);
-    line-height: 20px;
-    letter-spacing: -0.25px;
+    line-height: 16px;
+    letter-spacing: -0.1px;
     text-align: center;
     margin-top: 0;
 }
