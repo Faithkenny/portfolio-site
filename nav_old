@@ -75,7 +75,7 @@ aside button {
         <nav id="v1" class="main-nav">
 
             <figure>
-              <img src="media/thumbnail-32px.png" alt="Faith Kenny's avatar">
+              <img loading="lazy" src="media/thumbnail-32px.png" alt="Faith Kenny's avatar">
               <figcaption>Faith Kenny</figcaption>
             </figure>
 
