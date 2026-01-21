@@ -502,15 +502,20 @@ h2 {
 .images-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     width: 100%;
     /* border: 1px solid purple; */
     gap: 1.2rem;
     margin: 0;
 }
+.imgFlex {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 .mediaWrapper img, .images-wrapper img {
     width: 100%;
 }
+
 .textWrapper {
     position: sticky;
     bottom: 0px;

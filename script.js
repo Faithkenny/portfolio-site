@@ -98,10 +98,16 @@ emailBtn.addEventListener("click", async () => {
   const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
   const qacehomesModalCloseBtn = document.querySelector(".qacehomesModal .closeButton");
 
+  const ropa = document.querySelector(".ropa");
+  const ropaModal = document.querySelector(".ropaModal");
+  const ropaModalVideo = document.querySelector(".ropaModal video");
+  const ropaModalCloseBtn = document.querySelector(".ropaModal .closeButton");
+
   
 okfn.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".okfnModal .modalContent_buttonWrapper").style.width = "auto";
+      document.querySelector(".okfnModal .mediaWrapper").style.maxHeight = "56vh";
   okfnVideo.setAttribute("autoplay", "true");
   okfnModal.style.display = "flex";
   overlay.style.display = "flex";
@@ -116,6 +122,7 @@ okfnModalCloseBtn.addEventListener("click", (e) => {
 designChallenge.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
+    document.querySelector(".mediaWrapper").style.maxHeight = "56vh";
   // designChallengeVideo.setAttribute("autoplay", "true");
   designChallengeModal.style.display = "flex";
   overlay.style.display = "flex";
@@ -163,6 +170,21 @@ qacehomes.addEventListener("click", (e) => {
 
 qacehomesModalCloseBtn.addEventListener("click", (e) => {
   qacehomesModal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+
+ropa.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".ropaModal .modalContent_buttonWrapper").style.width = "auto"; /* This line is what let the width flex because it's a case study */
+  document.querySelector(".ropaModal .mediaWrapper").style.maxHeight = "56vh";
+  ropaModalVideo.setAttribute("autoplay", "true");
+  ropaModal.style.display = "flex";
+  overlay.style.display = "flex";
+});
+
+ropaModalCloseBtn.addEventListener("click", (e) => {
+  ropaModal.style.display = "none";
   overlay.style.display = "none";
 });
 
