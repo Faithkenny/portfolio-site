@@ -119,19 +119,7 @@ okfnModalCloseBtn.addEventListener("click", (e) => {
 });
 
   
-designChallenge.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
-    document.querySelector(".mediaWrapper").style.maxHeight = "56vh";
-  // designChallengeVideo.setAttribute("autoplay", "true");
-  designChallengeModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
 
-designChallengeModalCloseBtn.addEventListener("click", (e) => {
-  designChallengeModal.style.display = "none";
-  overlay.style.display = "none";
-});
 
 
 vanitylvrs.addEventListener("click", (e) => {
@@ -177,7 +165,7 @@ qacehomesModalCloseBtn.addEventListener("click", (e) => {
 ropa.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".ropaModal .modalContent_buttonWrapper").style.width = "auto"; /* This line is what let the width flex because it's a case study */
-  document.querySelector(".ropaModal .mediaWrapper").style.maxHeight = "56vh";
+  document.querySelector(".ropaModal .mediaWrapper").style.maxHeight = "50vh";
   ropaModalVideo.setAttribute("autoplay", "true");
   ropaModal.style.display = "flex";
   overlay.style.display = "flex";
@@ -185,6 +173,21 @@ ropa.addEventListener("click", (e) => {
 
 ropaModalCloseBtn.addEventListener("click", (e) => {
   ropaModal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+
+designChallenge.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
+    document.querySelector(".mediaWrapper").style.maxHeight = "56vh";
+  // designChallengeVideo.setAttribute("autoplay", "true");
+  designChallengeModal.style.display = "flex";
+  overlay.style.display = "flex";
+});
+
+designChallengeModalCloseBtn.addEventListener("click", (e) => {
+  designChallengeModal.style.display = "none";
   overlay.style.display = "none";
 });
 
