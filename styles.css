@@ -317,7 +317,7 @@ section.work div {
     border: 1px solid hsla(20, 6%, 90%, 0.2);
 }
 section.work:hover img,section.work:hover video{
-    /* transform: scale(1.015); */
+    /* transform:` scale(1.015); */
     /* transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), transform 0.5s ease-in-out; */
 }
 
@@ -506,6 +506,7 @@ h2 {
     width: 100%;
     /* border: 1px solid purple; */
     gap: 1.2rem;
+    margin: 0;
 }
 .mediaWrapper img, .images-wrapper img {
     width: 100%;
