@@ -47,7 +47,7 @@ emailBtn.addEventListener("click", async () => {
     item.setAttribute("width", 380);
   });
 
- git  videos.forEach(item => {
+ videos.forEach(item => {
     item.setAttribute("width", 380);
   });
   
