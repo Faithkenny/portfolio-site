@@ -1,51 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 
-/* Resets 
------------------------------------------------*/
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* height: 100%; */
-     /* elements default to the height of their content. This tells the browser the body element the height of the viewport even when the content doesn't  */
-    font-size: 62.5%; /* The default, 1rem = 10px. this makes 16px = 1.6rem*/
-    /* display: grid; */
-    /* grid-template-columns: auto 5rem auto 5rem; */
-}
-body > * {
-    box-sizing: inherit;
-    margin: 0;
-}
-/* button reset from morten */
-button {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    overflow: visible;
-    text-transform: none;
-    -webkit-appearance: button;
-    border: 0;
-    background: none;
-}
-button:hover {
-    cursor: pointer;
-}
-button:hover, button:focus, button:active {
-    background: none;
-    border-color: inherit;
-    border-radius: 0;
-}
-/* Global img reset from Morten  */
-img {
-    /* display: block; */
-    vertical-align: middle;
-    /* max-width: 100%; */
-    height: auto;
-}
-
 
 /* Global styles 
 -----------------------------------------------*/
@@ -93,18 +48,20 @@ img {
 
 
 body {
-    max-width: 1920px;
-    margin: 0 auto;
     font-family: "Inter", sans-serif;
-
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
     font-style: normal;
     font-size: 1.6rem;
     background-color: var(--color-bg); 
+    margin: 0;
+}
+
+.page-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -113,7 +70,7 @@ nav.header {
     /* padding: 1rem; */
     /* height: 48px; */
     background-color: hsla(0, 0%, 100%, 0.5);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(0.6rem);
     border-bottom: 1px solid transparent; /* Set a transparent border */
     border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
     border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
@@ -123,7 +80,7 @@ nav.header {
     flex-direction: row;
     align-items: center;  
     justify-content: space-around;  
-    margin: 0 32px 16px;
+    margin: 0 3.2rem 1.6rem;
     border-bottom: 1px solid red;
     font-size: 1.4rem;
 
@@ -131,7 +88,7 @@ nav.header {
 .logo {
     display: inline-flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 0.8rem;
     align-items: center;
     flex: 1 0 auto;
     margin-left: 1.6rem;
@@ -141,7 +98,7 @@ nav.header {
     border-radius: 999px;
     width: 24px;
     height: 24px;
-    border: 2px solid hsla(224, 72%, 4%, 0.15);
+    border: 0.2rem solid hsla(224, 72%, 4%, 0.15);
 }
 .logo p {
     color: var(--primary-text-color);
@@ -153,13 +110,11 @@ aside {
     flex-direction: row;
     gap: 2rem;
     margin-right: 1.6rem;
-    /* border: 1px solid blue; */
 }
 .nav-links {
     gap: 1.4rem;
     list-style-type: none;
     display: flex;
-    /* border: 1px solid red; */
 }
 .nav-links a {
     color: var(--primary-text-color);
@@ -176,14 +131,14 @@ li.divider {
  
 }
 .btns button {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     background-color: var(--cta-color);
-    padding: 5px 10px;
+    padding: 0.5rem 1.0rem;
     display: flex;
     width: 9rem;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     color: var(--gray-900);
 
 }
@@ -202,7 +157,7 @@ li.divider {
 -------------------------------------------------- */
 
 section#page-title {
-    margin-top: 12px;
+    margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,8 +178,8 @@ section#page-title {
 }
 h1 {
     color: var(--gray-900);
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
     font-weight: 600;
     width: 632px;
     text-align: center;
@@ -233,10 +188,10 @@ h1 {
 
 }
 #page-title p {
-    font-size: 14px;
+    font-size: 1.4rem;
     width: 421px;
     color: hsla(0, 0%, 39%, 1);
-    line-height: 20px;
+    line-height: 2.0remf;
     letter-spacing: -0.25px;
     text-align: center;
     margin-top: 0;
@@ -253,22 +208,17 @@ section.filters {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.2rem;
-    /* border: 1px solid red; */
 }
 .grid-list-switch {
-    /* margin-right: 1.6rem; */
     display: inline-flex;
-    gap: 8px;
+    gap: 0.8rem;
 }
 .grid-list-switch button {
-    /* background-color: hsla(30, 10%, 96%, 1); */
-    border-radius: 4px;
+    border-radius: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 18px; */
-    /* height: 18px; */
-    padding: 12px 14px;
+    padding: 1.2rem 1.4rem;
 }
 .grid-list-switch button.active-list-style {
     background-color: hsla(30, 10%, 96%, 1);
@@ -285,7 +235,7 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2.0rem;
     /* border: 1px solid red; */
 }
 section.work, section.work a{
@@ -308,7 +258,7 @@ section.work div {
     /* width: 380px; */
     /* height: 320px; */
     height: 214px;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     /* background-color: var(--case-study-bg); */
     display: flex;
     justify-content: center;
@@ -335,17 +285,9 @@ section.work:hover img,section.work:hover video{
 section.case-study div {
     width: 782px;
     overflow: hidden;
-    /* border: 2px solid hsla(224, 72%, 4%, 0); */
-    /* box-sizing: border-box; */
-    /* background-color: black; */
-    /* border: 1px solid red; */
-
-        /* flex: 1 1 auto; */
 }
 .trial {
     width: 100%;
-    /* opacity: 25%; */
-    /* filter: grayscale(100%); */
 }
 
 .dialog {
@@ -354,26 +296,17 @@ section.case-study div {
     background-color: hsla(20, 6%, 90%, 0.8);
     border: 1px solid crimson;
     position: absolute;
-    /* inset: 0; */
-    /* right: 20px; */
-    /* place-items: center; */
-    /* transform: none; */
-    /* transform-origin: 50% 50% 0px; */
     z-index: 999;
     border-radius: 0.4em;
     overflow: scroll;
     display: none;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 2rem;
-    /* display: none; */
 }
 .video-wrapper{
-    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     margin: 0;
     width: 90%;
     margin-top: 4rem;
@@ -459,15 +392,15 @@ h2 {
     width: auto;
 }
 .video_text_parent .btns button {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     background-color: var(--cta-color);
-    padding: 10px 14px;
+    padding: 1.0rem 1.4rem;
     display: flex;
     width: auto;
     gap: 0.6rem;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     color: var(--gray-900);
 }
 .video_text_parent .btns:hover button {
@@ -554,12 +487,8 @@ h2 {
     justify-content: center;
     /* cursor: pointer; */
     background: rgba(255, 255, 255, 0.95);
-    padding: 12px;
-    /* border-radius: 50%; */
-    /* border-width: 1px; */
-    /* border-style: solid; */
-    /* border-color: rgba(0, 0, 0, 0.08); */
-    border-bottom-left-radius: 8px;
+    padding: 1.2rem;
+    border-bottom-left-radius: 0.8rem;
     border: 1px solid rgb(233, 233, 233);
 
 }
