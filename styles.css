@@ -239,6 +239,11 @@ main{
     gap: 2.0rem;
     /* border: 1px solid red; */
 }
+
+.ropa-mobile {
+    display: none !important; 
+}
+
 section.work, section.work a{
     display: flex;
     flex-direction: column;
@@ -259,8 +264,7 @@ section.work div {
     /* width: 380px; */
     /* height: 320px; */
     height: 214px;
-    border-radius: 0.4rem;~
-    /* background-color: var(--case-study-bg); */
+    border-radius: 0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,6 +544,9 @@ footer ul {
 
 
 @media screen and (min-width:797px) and (max-width:1184px){
+.ropa-mobile {
+    display: none !important; 
+}
 
 .logo {
     display: inline-flex;
@@ -629,9 +636,15 @@ h1 {
     text-align: center;
     margin-top: 0;
 }
+
+/* Main  --------------------------- */
+
+
 .work p {
     font-size: 1.3rem;
 }
+
+
 
 footer p, ul  {
     font-size: 1.2rem;
@@ -639,6 +652,15 @@ footer p, ul  {
 
 }
 @media screen and (max-width:796px){
+
+
+.ropa {
+    display: none !important; 
+}
+.ropa-mobile {
+    display: flex !important; 
+}
+
 nav.header {
     width: 100%;
     /* padding: 1rem; */
@@ -714,16 +736,21 @@ h1 {
     text-align: center;
     margin-top: 0;
 }
+
+/* Main files -------------------------------------- */
+
 main {
     max-width: 300px;
-    gap: 1.2rem;
+    gap: 1.8rem;
     margin-top: 1.8rem;
 
 }
+
+
 section.work, section.work a{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.8rem;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
