@@ -191,7 +191,7 @@ h1 {
     font-size: 1.4rem;
     width: 421px;
     color: hsla(0, 0%, 39%, 1);
-    line-height: 2.0remf;
+    line-height: 1.8rem;
     letter-spacing: -0.25px;
     text-align: center;
     margin-top: 0;
@@ -234,7 +234,8 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 2.0rem;
     /* border: 1px solid red; */
 }
@@ -264,13 +265,9 @@ section.work div {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    width: 100%;
     border: 1px solid hsla(20, 6%, 90%, 0.2);
 }
-section.work:hover img,section.work:hover video{
-    /* transform:` scale(1.015); */
-    /* transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), transform 0.5s ease-in-out; */
-}
-
 .work p {
     color: var(--secondary-text-color);
     font-size: var(--secondary-text-size);
@@ -539,4 +536,186 @@ footer ul {
     display: flex;
     gap: 1.8rem;
     align-items: center;
+}
+
+
+@media screen and (min-width:796px) and (max-width:1184px){
+
+.logo {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    flex: 1 0 auto;
+    margin-left: 1.6rem;
+    /* border: 1px solid red; */
+}
+.logo img {
+    border-radius: 999px;
+    width: 18px;
+    height: 18px;
+    border: 0.2rem solid hsla(224, 72%, 4%, 0.15);
+}
+.logo p {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* gap: 2rem; */
+    margin-right: 1.6rem;
+}
+.nav-links {
+    gap: 1.1rem;
+    list-style-type: none;
+    display: flex;
+}
+.nav-links li {
+    color: var(--primary-text-color);
+    text-decoration: none;  
+    font-size: 1.2rem;
+}
+li.divider {
+    color: hsla(224, 72%, 4%, 0.05);
+}
+.btns {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.btns button {
+    font-size: 1.0rem;
+    font-weight: 700;
+    background-color: var(--cta-color);
+    padding: 0.5rem 1.0rem;
+    display: flex;
+    width: 9rem;
+    justify-content: center;
+    border-radius: 0.4rem;
+    color: var(--gray-900);
+
+}    
+
+section#page-title {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+}
+h1 {
+    color: var(--gray-900);
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    width: 55%;
+    text-align: center;
+    letter-spacing: -0.4px;
+    margin: 0;
+
+}
+#page-title p {
+    font-size: 1.3rem;
+    width: 421px;
+    color: hsla(0, 0%, 39%, 1);
+    line-height: 1.8rem;
+    letter-spacing: -0.25px;
+    text-align: center;
+    margin-top: 0;
+}
+.work p {
+    font-size: 1.3rem;
+}
+
+footer p, ul  {
+    font-size: 1.2rem;
+}
+
+}
+@media screen and (max-width:796px){
+nav.header {
+    width: 100%;
+    /* padding: 1rem; */
+    /* height: 48px; */
+    background-color: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(0.6rem);
+    border-bottom: 1px solid transparent; /* Set a transparent border */
+    border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
+    border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid red;
+    font-size: 1.4rem;
+
+}
+
+ .logo {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
+    flex: 0 1 auto;
+    margin-left: 1.6rem;
+    /* border: 1px solid red; */
+}
+.logo img {
+    border-radius: 999px;
+    width: 18px;
+    height: 18px;
+    border: 0.2rem solid hsla(224, 72%, 4%, 0.15);
+}
+.logo p {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 0.8;
+}
+aside {
+    display: none;
+}   
+
+
+section#page-title {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+}
+h1 {
+    color: var(--gray-900);
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+    letter-spacing: -0.4px;
+    margin: 0;
+
+}
+#page-title p {
+    font-size: 1rem;
+    width: 320px;
+    color: hsla(0, 0%, 39%, 1);
+    line-height: 1.4rem;
+    letter-spacing: -0.25px;
+    text-align: center;
+    margin-top: 0;
+}
+main {
+    max-width: 300px;
+}
+
 }
