@@ -26,7 +26,11 @@ emailBtn.addEventListener("click", async () => {
   }, 2000);
 });
 
-  
+if (window.innerWidth <= 796){
+  document.querySelectorAll(".desktop").forEach(item => item.remove());
+}
+
+
   // const emailBtn = document.querySelector(".email");
 
   // Use the Clipboard API to write the text
@@ -34,6 +38,14 @@ emailBtn.addEventListener("click", async () => {
   //   navigator.clipboard.writeText("heyfaith@iamfaithkenny.com");
   //   emailBtn.textContent = "Copied!"
   // });
+
+
+window.addEventListener('resize', function(event) {
+  // Code to run when the window is resized
+  console.log('Window resized to: ' + window.innerWidth + 'px width and ' + window.innerHeight + 'px height');
+  // You can perform actions here, such as updating layout or recalculating dimensions
+});
+
 
 
 
