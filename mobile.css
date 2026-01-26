@@ -431,6 +431,9 @@ line-height: 2.2rem;
     width: fit-content;
     color: #5E5A57
 }
+.s-05 {
+    min-width: 359px;
+}
 .s-05 div {
     color: #70757F;
     font-family: Inter;
@@ -444,20 +447,14 @@ line-height: 2.2rem;
     display: flex;
     justify-content: center;  
     align-items: center;
-    gap: 10px;
+    gap: 1.2rem;
     overflow: hidden;
+    width: 100%;
 }
 .s-05 img {
     border-radius: 0.4rem;
     position: relative;
     bottom: -4px;
-}
-.s-05 div:first-of-type {
-    /* width: 350px; */
-}
-.s-05 img:first-of-type {
-    width: fit-content%;
-    border: 1px solidred;
 }
 .s-06-sections {
     display: flex;
