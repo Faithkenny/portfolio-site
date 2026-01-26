@@ -207,6 +207,7 @@ aside {
     position: fixed;
     width: 100%;
     top: 45px;
+    display: none;
 }
 ul.dropdown-menu {
     display: flex;
