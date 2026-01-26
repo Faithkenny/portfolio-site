@@ -148,14 +148,13 @@ section#page-title {
     
     width: 274px;
     max-width: 80%;
-    text-align: center;
+    text-align: left;
     font-family: Inter;
     /* font-size: 1.25rem; */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.025rem;
-
 }
 #page-title p {
     font-size: 1.1rem;
@@ -163,7 +162,7 @@ section#page-title {
     color: hsla(0, 0%, 39%, 1);
     line-height: 1.6rem;
     letter-spacing: -0.25px;
-    text-align: center;
+    text-align: left;
     margin-top: 0;
 
     width: 217px;
@@ -173,6 +172,7 @@ section#page-title {
     font-style: normal;
     font-weight: 400;
 }
+
 
 .s-01 {
     display: flex;
