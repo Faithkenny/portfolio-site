@@ -101,7 +101,9 @@ body * {
 
 @media screen and (max-width:796px){
 
-
+.info-wrapper, .mobile-info {
+    display: none;
+}
 .page-wrapper {
     max-width: 796px;
     margin: 0 auto;
@@ -168,7 +170,10 @@ nav.header {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background: #F2F2F3;
+    /* background: #F2F2F3; */
+}
+.left-icon {
+    background: none;
 }
 .hide-icon {
     display: none;

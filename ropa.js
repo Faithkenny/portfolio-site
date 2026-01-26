@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
 leftIcon.addEventListener("click", (e) => {
     e.preventDefault();
 
+    leftIcon.style.background = "#F2F2F3";
+
 if (hamburgerSvg.classList.contains("hide-icon")) { 
     hamburgerSvg.classList.toggle("hide-icon");
     cancelSvg.classList.toggle("hide-icon");
