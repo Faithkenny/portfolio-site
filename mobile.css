@@ -452,7 +452,13 @@ line-height: 2.2rem;
     position: relative;
     bottom: -4px;
 }
-
+.s-05 div:first-of-type {
+    /* width: 350px; */
+}
+.s-05 img:first-of-type {
+    width: fit-content%;
+    border: 1px solidred;
+}
 .s-06-sections {
     display: flex;
     flex-direction: column;
