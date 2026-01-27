@@ -667,6 +667,7 @@ footer p, ul  {
     display: flex !important; 
 }
 
+
 nav.header {
     width: 100%;
     /* padding: 1rem; */
@@ -742,6 +743,9 @@ h1 {
     text-align: center;
     margin-top: 0;
 }
+  .page-title br {
+    display: none;
+  }
 
 /* Main files -------------------------------------- */
 

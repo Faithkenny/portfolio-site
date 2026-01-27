@@ -5,29 +5,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
-  const emailBtn = document.querySelector(".email");
-
-emailBtn.addEventListener("click", async () => {
-  await navigator.clipboard.writeText("work@iamfaithkenny.com");
-
-  emailBtn.classList.add("is-changing");
-
-  setTimeout(() => {
-    emailBtn.textContent = "Copied!";
-    emailBtn.classList.remove("is-changing");
-  }, 150);
-
-  setTimeout(() => {
-    emailBtn.classList.add("is-changing");
-    setTimeout(() => {
-      emailBtn.textContent = "Copy email";
-      emailBtn.classList.remove("is-changing");
-    }, 150);
-  }, 2000);
-});
+  
 
 if (window.innerWidth <= 796){
   document.querySelectorAll(".desktop").forEach(item => item.remove());
+
+
 }
 
 
