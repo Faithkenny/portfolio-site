@@ -28,5 +28,19 @@ if (hamburgerSvg.classList.contains("hide-icon")) {
 });
 
 
+const rightIcon = document.querySelector(".right-icon");
+
+const daySvg = document.querySelector(".sun-day-icon");
+const nightSvg = document.querySelector(".moon-night-icon");
+
+
+rightIcon.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    rightIcon.style.background = "#F2F2F3";
+
+});
+
+
 }
 );
