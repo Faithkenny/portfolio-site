@@ -174,8 +174,7 @@ section#page-title {
     /* border: 1px solid red; */
 }
 ::selection {
-  background-color: var(--cyan-500); /* The background color of the selected text */
-  /* color: var(--primary-text-color);            The text color of the selected text */
+  background-color: var(--cyan-500);
 }
 
 /* For compatibility with older Firefox versions */
