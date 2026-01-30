@@ -82,9 +82,7 @@
     --red-200: #FFC9C9;
     --red-100: #FFC9C9;
     --red-50: #FFFBFB;
-
-
-    
+  
     --text-nav-ul-li-a: var(--warm-gray-700);
     --text-nav-cta: var(--cool-gray-900);
 
@@ -113,9 +111,14 @@
     --states-total-white: var(--true-gray-0);
     --states-total-black: var(--true-gray-900);
     
+    --surface-body-bg: var(--true-gray-0);
     --surface-nav: var(--true-gray-half-white);
     --surface-cta: var(--teal-500);
+    --surface-ul: var(--states-total-white);
+    --surface-icon-bg: var(--cool-gray-100);
     --surface-default-bg: var(--cool-gray-100);
+    --surface-s1-bg: var(--cool-gray-700);
+    --surface-s4-bg: var(--true-gray-0);
     --surface-dark-bg: var(--cool-gray-700);
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);
@@ -153,7 +156,6 @@
     --case-study-bg: var(--cool-gray-300);
 
     --secondary-text-size: 14px;
-    --color-bg: var(--true-gray-0);
     --text-color: var(--true-gray-700);
     --border-radius: 4px;
     --media-items-color: var(--true-gray-400);
@@ -162,53 +164,6 @@
     --video-wrapper-height: 320px;
     --footer-color: var(--cool-gray-50);
     --text-highlight-color: var(--teal-500);
-}
-
-.dark-mode {
-    --text-nav-ul-li-a: var(--warm-gray-700);
-    --text-nav-cta: var(--cool-gray-900);
-
-    --text-s-01-page-title-h1: var(--warm-gray-900);
-    --text-s-01-page-title-p: var(--cool-gray-500);
-
-    --text-s-02-product-goal-h3: var(--cool-gray-700);
-    --text-s-02-product-goal-caption: var(--teal-700);
-    --text-s-02-product-goal-details-p: var(--cool-gray-500);
-    --text-s-02-product-goal-reasons: var(--warm-gray-600);
-
-    --text-audience: var(--cool-gray-300);
-
-    --text-s-04-caption: var(--warm-gray-500);
-    --text-s-04-h2: var(--cool-gray-700);
-    --text-s-04-p: var(--cool-gray-500);
-    --text-s-04-product-goal-details-p: var(--cool-gray-500);
-    --text-s-04-product-goal-reasons: var(--warm-gray-600);
-
-    --text-s-06-img-wrapper-p: var(--warm-gray-400);
-
-    --text-footer-p-or-ul: var(--true-gray-400);
-
-
-    --states-danger: var(--red-500);
-    --states-total-white: var(--true-gray-0);
-    --states-total-black: var(--true-gray-900);
-    
-    --surface-nav: var(--warm-gray-800);
-    --surface-cta: var(--teal-500);
-    --surface-default-bg: var(--cool-gray-100);
-    --surface-dark-bg: var(--cool-gray-700);
-    --surface-teal-bg: var(--teal-100);
-    --surface-purple-bg: var(--purple-200);
-    --surface-danger: var(--red-50);
-
-    --border-danger: var(--red-300);
-    --border-divs-wrapper: var(--true-gray-500);
-    --border-ul-li: var(--true-gray-300);
-    --border-nav-logo-img: var(--cool-gray-300);
-    --border-nav-icon: var(--cool-gray-400);
-    --border-audience: var(--purple-500);
-    --border-old-ropas-wrapper: var(--cool-gray-100);
-
 }
 
 ::selection {
@@ -220,13 +175,65 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.6rem;
-    background-color: var(--color-bg); 
+    background-color: var(--surface-body-bg); 
     margin: 0;
 }
 body * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+.dark-mode {
+    --text-nav-ul-li-a: var(--warm-gray-400);
+    --text-nav-cta: var(--cool-gray-900);
+
+    --text-s-01-page-title-h1: var(--true-gray-0);
+    --text-s-01-page-title-p: var(--warm-gray-400);
+
+    --text-s-02-product-goal-h3: var(--warm-gray-300);
+    --text-s-02-product-goal-caption: var(--teal-700);
+    --text-s-02-product-goal-details-p: var(--warm-gray-200);
+    --text-s-02-product-goal-reasons: var(--warm-gray-300);
+
+    --text-audience: var(--cool-gray-300);
+
+    --text-s-04-caption: var(--warm-gray-500);
+    --text-s-04-h2: var(--cool-gray-300);
+    --text-s-04-p: var(--warm-gray-500);
+    --text-s-04-product-goal-details-p: var(--cool-gray-500);
+    --text-s-04-product-goal-reasons: var(--warm-gray-600);
+
+    --text-s-06-img-wrapper-p: var(--warm-gray-400);
+
+    --text-footer-p-or-ul: var(--cool-gray-400);
+
+
+    --states-danger: var(--red-800);
+    --states-total-white: var(--true-gray-0);
+    --states-total-black: var(--true-gray-900);
+    
+    --surface-body-bg: var(--warm-gray-900);
+    --surface-nav: var(--warm-gray-800);
+    --surface-cta: var(--teal-500);
+    --surface-ul: var(--warm-gray-800);
+    --surface-icon-bg: var(--warm-gray-700);
+    --surface-default-bg: var(--cool-gray-100);
+    --surface-s1-bg: var(--warm-gray-700);
+    --surface-s4-bg: var(--warm-gray-700);
+    --surface-dark-bg: var(--cool-gray-700);
+    --surface-teal-bg: var(--teal-100);
+    --surface-purple-bg: var(--purple-200);
+    --surface-danger: var(--red-50);
+    --surface-footer: var(--cool-gray-700);
+
+    --border-danger: var(--red-700);
+    --border-divs-wrapper: var(--true-gray-500);
+    --border-ul-li: var(--warm-gray-600);
+    --border-nav-logo-img: var(--cool-gray-300);
+    --border-nav-icon: var(--cool-gray-400);
+    --border-audience: var(--purple-500);
+    --border-old-ropas-wrapper: var(--cool-gray-100);
+
 }
 
 .page-wrapper {
@@ -276,7 +283,7 @@ body * {
 
 nav.header {
     width: 100%;
-    background-color: var(--true-gray-half-white);
+    background-color: var(--surface-nav);
     backdrop-filter: blur(0.6rem);
     border-bottom: 1px solid transparent; /* Set a transparent border */
     border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
@@ -329,9 +336,10 @@ nav.header {
     align-items: center;
     border-radius: 4px;
     stroke: var(--border-nav-icon);
+    background-color: none; /* This is hardcoded in Javascript ropa.js */
 }
 .left-icon {
-    background: none; /* This is hardcoded in Javascript ropa.js */
+
 }
 .hide-icon {
     display: none;
@@ -375,7 +383,7 @@ aside {
 }
 ul.dropdown-menu {
     display: flex;
-    background-color: var(--states-total-white);
+    background-color: var(--surface-ul);
     flex-direction: column;
     gap: 0;
     justify-content: center;
@@ -460,7 +468,7 @@ h3.page-title {
     align-items: center;
     justify-content: center; 
     border-radius: 8px;
-    /* background: #28343E; */
+    background: var(--surface-s1-bg);
     max-width: 94%;
     padding: 1.6rem 1.2rem;
 }
@@ -516,7 +524,7 @@ h3.page-title {
     /* border: 1px solid red; */
 }
 
-.product-goal-details p {
+.product-goal-details > p {
     color: var(--text-s-02-product-goal-details-p);
     font-size: 1.6rem;
     font-weight: normal;
@@ -619,7 +627,7 @@ h3.page-title {
     margin: 3rem 1.2rem;
     margin-bottom: 0;
     padding: 1.4rem 3.2rem;
-    background-color: var(--states-total-white);
+    background-color: transparent;
     /* margin: 0 auto; */
     /* border: 1px solid red; */
 
@@ -703,14 +711,14 @@ line-height: 2.2rem;
     min-width: 359px;
 }
 .s-05 div {
-    color: var(--surface-default-bg);
+    color: var(--text-audience);
     font-family: Inter;
-    font-size: 8px;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 150% */
     letter-spacing: -0.16px;
-    background: var(--border-default-divs-wrapper);
+    background: var(--surface-s1-bg);
 
     display: flex;
     justify-content: center;  
@@ -774,7 +782,7 @@ line-height: 2.2rem;
 
 
 footer {
-    background-color: var(--warm-gray-100);
+    background-color: var(--surface-footer);
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
