@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 leftIcon.addEventListener("click", (e) => {
     e.preventDefault();
 
-    leftIcon.style.background = "#F2F2F3";
+    leftIcon.style.background = "var(--cool-gray-100)";
 
 if (hamburgerSvg.classList.contains("hide-icon")) { 
     hamburgerSvg.classList.toggle("hide-icon");
@@ -37,7 +37,7 @@ const nightSvg = document.querySelector(".moon-night-icon");
 rightIcon.addEventListener("click", (e) => {
     e.preventDefault();
 
-    rightIcon.style.background = "#F2F2F3";
+    rightIcon.style.background = "var(--cool-gray-100)";
 
 });
 
