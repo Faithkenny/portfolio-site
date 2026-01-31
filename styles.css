@@ -73,6 +73,11 @@ body {
     align-items: center;
 }
 
+
+/* navigation
+-------------------------------------------------- */
+
+
 nav.header {
     width: 100%;
     /* padding: 1rem; */
@@ -187,10 +192,11 @@ h1 {
     font-size: 2.2rem;
     line-height: 2.7rem;
     font-weight: 600;
-    width: 632px;
+    width: 530px; /* used to be 632px */
     text-align: center;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.15px;
     margin: 0;
+    font-family: "inter display";
 
 }
 #page-title p {
@@ -201,35 +207,10 @@ h1 {
     letter-spacing: -0.25px;
     text-align: center;
     margin-top: 0;
+    /* display: none; */
 }
 
 
-
-/* filters
--------------------------------------------------- */
-section.filters {
-    max-width: 1184px;
-    width: 100%;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.2rem;
-}
-.grid-list-switch {
-    display: inline-flex;
-    gap: 0.8rem;
-}
-.grid-list-switch button {
-    border-radius: 0.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.2rem 1.4rem;
-}
-.grid-list-switch button.active-list-style {
-    background-color: hsla(30, 10%, 96%, 1);
-
-}
 
 /* Projects
 -----------------------------------------------*/
@@ -464,7 +445,10 @@ h2 {
 }
 .textWrapper h2 {
     font-size: 2.2rem;
+    font-family: "inter display";
     line-height: 1.8rem;
+    letter-spacing: -0.25px;
+    font-weight: 600;
     margin: 0;
 }
 .textWrapper p{
@@ -705,7 +689,7 @@ nav.header {
 }
 .logo p {
     color: var(--primary-text-color);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.1;
 }

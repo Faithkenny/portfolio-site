@@ -236,35 +236,35 @@ body * {
 
 }
 
-.page-wrapper {
+/* .page-wrapper {
     display: none;
-}
+} */
 
-.info-wrapper {
+/* .info-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
-.mobile-info{
+/* .mobile-info{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: ; */
+    width: ;
     margin: 0 auto;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
     background-color: var(--cta-color);
     padding: 2rem 1.0rem;
-    /* display: flex; */
+    display: flex;
     width: 20rem;
     border-radius: 0.4rem;
     color: var(--cool-gray-900);
 
-}
+} */
 
 @media screen and (max-width:796px){
 
@@ -855,5 +855,3 @@ img {
 
 
 }
-
-
