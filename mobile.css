@@ -296,8 +296,6 @@ nav.header {
     justify-content: space-between;
     margin: 0;
     padding: 1rem;
-    border-bottom: 1px solid red;
-    font-size: 1.4rem;
     z-index: 999;
 }
 .btns {
@@ -363,7 +361,7 @@ nav.header {
 }
 .logo p {
     color: var(--text-nav-ul-li-a);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.1;
 }
@@ -424,12 +422,12 @@ h1.page-title {
     width: 274px;
     max-width: 80%;
     /* text-align: left; */
-    font-family: Inter;
+    font-family: "inter display";
     /* font-size: 1.25rem; */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.015px;
 }
 #page-title p {
     font-size: 1.1rem;
