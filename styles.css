@@ -149,6 +149,8 @@
     --surface-purple-bg: var(--purple-200);
     --surface-danger: var(--red-50);
     --surface-footer: var(--cool-gray-700);
+    --surface-overlay: hsla(217, 18%, 65%, 0.9);
+
 
 
     --border-danger: var(--red-300);
@@ -258,6 +260,8 @@ body * {
     --surface-purple-bg: var(--purple-200);
     --surface-danger: var(--red-50);
     --surface-footer: var(--cool-gray-700);
+    --surface-overlay: hsla(0, 3%, 7%, 0.9);
+
 
     --border-danger: var(--red-700);
     --border-divs-wrapper: var(--true-gray-500);
@@ -534,7 +538,7 @@ section.case-study div {
     inset: 0;
     z-index: 999;
     /* background-color: hsla(219, 29%, 18%, 0.98); */
-    background-color: hsla(217, 18%, 65%, 0.9);
+    background-color: var(--surface-overlay);
     /* backdrop-filter: blur(1px); */
     /* -webkit-backdrop-filter: blur(12px); */
 }
@@ -581,7 +585,7 @@ section.case-study div {
     flex-direction: column;
     position: relative;
     gap: 2rem;
-    padding: 2.8rem 2.4rem 1.2rem;    
+    padding: 2.8rem 2.4rem 2rem;    
 }
 .video_text_parent div.btns {
     position: absolute;
@@ -655,7 +659,7 @@ section.case-study div {
     width: 75%;
     display: flex;
     flex-direction: column;
-    gap: 0rem;
+    gap: 1.2rem;
     /* margin: 1.2rem 0; */
 }
 .textWrapper h2 {
@@ -676,6 +680,7 @@ section.case-study div {
     font-size: inherit;
     line-height: 2.6rem;
     list-style: decimal;
+    margin-left: 2rem;
 }
 .closeButton {
     position: absolute;

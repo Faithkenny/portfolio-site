@@ -224,7 +224,8 @@ body * {
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);
     --surface-danger: var(--red-50);
-    --surface-footer: var(--cool-gray-700);
+    --surface-overlay: hsla(36, 18%, 65%, 0.9);
+
 
     --border-danger: var(--red-700);
     --border-divs-wrapper: var(--true-gray-500);
