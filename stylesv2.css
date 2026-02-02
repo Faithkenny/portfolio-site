@@ -56,7 +56,7 @@
     --purple-300: #DBBEFF;
     --purple-200: #EFD8FF;
     --purple-100: #F4EBFF;
-    --purple-50: #F8F4FD;
+    --purple-100: #F8F4FD;
     
     --red-900: #460809;
     --red-800: #55160C;
@@ -114,26 +114,12 @@
     --surface-overlay: hsla(217, 18%, 65%, 0.9);
 
 
-
-    --border-danger: var(--red-300);
-    --border-divs-wrapper: var(--true-gray-500);
-    --border-ul-li: var(--true-gray-300);
-    --border-nav-logo-img: var(--cool-gray-300);
-    --border-nav-icon: var(--cool-gray-400);
-    --border-audience: var(--purple-500);
-    --border-old-ropas-wrapper: var(--cool-gray-100);
-
-
     --secondary-text-color: var(--true-gray-400);
-    --white-color: var(--true-gray-0);
     --cta-color: var(--teal-500);
     --case-study-bg: var(--cool-gray-300);
     --secondary-text-size: 14px;
-    --border-radius: 4px;
     --video-wrapper-width: 380px;
     --video-wrapper-height: 320px;
-    --footer-color: var(--cool-gray-50);
-    --text-highlight-color: var(--teal-500);
 }
 .dark-mode {
     --text-nav-ul-li-a: var(--warm-gray-400);
@@ -179,17 +165,8 @@
     --surface-danger: var(--red-50);
     --surface-footer: var(--cool-gray-700);
     --surface-overlay: hsla(0, 3%, 7%, 0.9);
-
-
-    --border-danger: var(--red-700);
-    --border-divs-wrapper: var(--true-gray-500);
-    --border-ul-li: var(--warm-gray-600);
-    --border-nav-logo-img: var(--cool-gray-300);
-    --border-nav-icon: var(--cool-gray-400);
-    --border-audience: var(--purple-500);
-    --border-old-ropas-wrapper: var(--cool-gray-100);
-
 }
+
 
 /* Fallback for browsers with variable font support */
 @supports (font-variation-settings: normal) {
@@ -201,7 +178,7 @@
 -----------------------------------------------*/
 
 body {
-    font-family: 'Inter display', 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.6rem;
@@ -216,7 +193,7 @@ body * {
 
 
 ::selection {
-  background-color: var(--teal-500);
+  background-color: var(--cyan-500);
 }
 
 
@@ -282,7 +259,7 @@ nav.header {
 }
 .btns button {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     background-color: var(--cta-color);
     padding: 0.5rem 1.0rem;
     display: flex;
@@ -315,9 +292,6 @@ aside {
 }
 .nav-links a {
     color: var(--text-nav-ul-li-a);
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.1;
     text-decoration: none;  
 }
 li.divider {
@@ -358,7 +332,6 @@ section#page-title {
 }
 
 h1 {
-    font-family: 'Inter Display', 'Inter', sans-serif;
     color: var(--text-s-01-page-title-h1);
     font-size: 2.2rem;
     line-height: 2.7rem;
@@ -367,6 +340,7 @@ h1 {
     text-align: center;
     letter-spacing: -0.15px;
     margin: 0;
+    font-family: 'Inter Display', 'Inter', sans-serif;
 }
 #page-title p {
     font-size: 1.4rem;
@@ -509,9 +483,8 @@ section.case-study div {
     position: relative;
     max-width: 90vw;
     width: 960px;
-    /* width: 960px; 960px; */
     height: auto;
-    /* pointer-events: auto; */
+    pointer-events: auto;
     /* box-shadow: rgba(0, 0, 0, 0.12) 0px 35px 60px, rgba(0, 0, 0, 0.08) 0px 20px 30px, rgba(0, 0, 0, 0.05) 0px 9px 12px; */
     border-radius: 16px;
     /* background: rgba(255, 255, 255, 0.05); */
@@ -527,7 +500,6 @@ section.case-study div {
     position: relative;
     gap: 2rem;
     padding: 2.8rem 2.4rem 2rem;    
-
 }
 .video_text_parent div.btns {
     position: absolute;
@@ -545,18 +517,18 @@ section.case-study div {
     gap: 0.6rem;
     justify-content: center;
     border-radius: 0.4rem;
-    color: var(--warm-gray-900);
+    color: var(--gray-900);
 }
 .video_text_parent .btns:hover button {
-    background-color: var(--cool-gray-100);
-    border: 1px solid var(--cool-gray-500);
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-500);
 }
 .mediaWrapper {
     /* transform: none; */
     /* transform-origin: 50% 50% 0px; */
     width: 100%;
     min-height: 240px;
-    max-height: 50vh;
+    max-height: 60vh;
     /* height: auto; */
     position: relative;
     overflow: scroll;
@@ -596,6 +568,7 @@ section.case-study div {
 .textWrapper {
     position: sticky;
     bottom: 0px;
+    color: var(--gray-800);
     opacity: 1;
     width: 75%;
     display: flex;
@@ -604,8 +577,6 @@ section.case-study div {
     /* margin: 1.2rem 0; */
 }
 .textWrapper h2 {
-    color: var(--cool-gray-800);
-
     font-size: 2.2rem;
   font-family: 'Inter Display', 'Inter', sans-serif;
     line-height: 1.8rem;
@@ -615,16 +586,15 @@ section.case-study div {
 }
 .textWrapper p{
     line-height: 2.4rem;
-    color: var(--cool-gray-600);
+    color: var(--gray-700);
     margin-bottom: 0.8rem;
 }
 .textWrapper ul {
     margin: 0;
     font-size: inherit;
     line-height: 2.6rem;
-    list-style: circle;
+    list-style: decimal;
     margin-left: 2rem;
-    color: var(--warm-gray-600);
 }
 .closeButton {
     position: absolute;
@@ -665,7 +635,6 @@ footer {
     margin-top: 5rem;
 
     background-color: var(--surface-icon-bg); 
-
     padding: 1rem;
 }
 footer nav {
@@ -678,7 +647,7 @@ footer nav {
     padding: 0 1.6rem;
 
 }
-footer p, footer ul  {
+footer p, ul  {
     color: var(--secondary-text-color);
     font-size: var(--secondary-text-size);
     /* font-weight: 500; */
@@ -707,6 +676,7 @@ footer ul {
 
 
 nav.header {
+    backdrop-filter: none;
     width: 100%;
     position: sticky;
     top: 0;
@@ -814,19 +784,18 @@ ul.dropdown-menu li a {
 
 
 section#page-title {
-    margin: 1.6rem 0 0.4rem;
+    margin-top: 1.6rem;
 }
 h1 {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     text-align: center;
     font-family: 'Inter Display', 'Inter', sans-serif;
     
-    /* width: 65%; */
-    max-width: 75%;
+    width: 65%;
+    max-width: 80%;
     font-weight: 500;
-    letter-spacing: -0.2px;
-    margin: 0.4rem 0;
+    letter-spacing: -0.015px;
 }
 #page-title p {
     font-size: 1.2rem;
@@ -871,7 +840,6 @@ section.work div {
     /* height: 320px; */
     height: 214px;
     border-radius: 0.4rem;
-    /* background-color: var(--case-study-bg); */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,230 @@
+<!--   
+  <div class="designChallengeModal slideShow modal ">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <div class="images-wrapper">
+        <img loading="lazy" src="media/deluxe-holiday-homes/01.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/03.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" class="imgFlex" src="media/deluxe-holiday-homes/02.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/04.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/05.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/06.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/07.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" class="imgFlex" src="media/deluxe-holiday-homes/08.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/09.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+        <img loading="lazy" src="media/deluxe-holiday-homes/10.jpg" alt="Design challenge using AI - Deluxe holiday homes, Dubai"/>
+      </div>
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">Product design challenge - in the age of AI</h2>
+      <p>I analyzed the brief using the 5W1H Product thinking framework. This means defining the knowns, and uncovering the unknowns. Some desktop research informed the hypotheses I'd make for the unknowns. I then charted out the userflow in Figjam. Finally, here's my process for using Figma Make, a GenAI visual design tool for building prototypes:
+      </p>
+      <ul>
+        <li>Prompt my mapped userflow,</li>
+        <li>Keep refining the prompt,</li>
+        <li>Select one outcome, & improve the visual polish in Figma</li>
+      </ul>
+      </div>
+  
+    <div class="btns"><a href="https://www.figma.com/deck/uwct6xX1d1VQcdUkJx5OBj/Faith-Kenny---Deluxe-Holiday-Homes?node-id=8-6493&t=kQCUctbAUUvHRSEg-1" target="_blank" rel="noopener noreferrer">
+      <button class="email">Interactive prototype presentation<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="hsla(234, 36%, 5%, 1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></button>
+    </a></div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div> -->
+  
+  <!-- <div class="vanitylvrsModal modal">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <video controls autoplay src="media/VanityLvrs-HighRes.mp4" class="video-media" loop></video>
+  
+      <div class="images-wrapper">
+        <img loading="lazy" src="media/VanityLvrs-image-1.png" alt="VanityLvrs" >
+        <img loading="lazy" src="media/VanityLvrs-image-2.png" alt="VanityLvrs" >
+        <img loading="lazy" src="media/VanityLvrs-image-3.png" alt="VanityLvrs" >
+        <img loading="lazy" src="media/VanityLvrs-image-4.png" alt="VanityLvrs" >
+      </div>
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">VanityLvrs</h2>
+      <p>Landing page interaction design concept → Interior design + music for audiophiles</p>
+    </div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div> -->
+  
+  <div class="wallpapersModal modal">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <video autoplay src="media/wallpapers-1.mp4" class="video-media" loop controls></video>
+      <video autoplay src="media/wallpapers-2.mp4" class="video-media" loop></video>
+      <video autoplay src="media/wallpapers-3.mp4" class="video-media" loop></video>
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">Screensavers</h2>
+      <p>Tab switch component & bezier curves explorations. Made with Figma and Adobe AfterEffects. Photos by Ultralinx, & Helvetiica.</p>
+    </div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div>
+  
+  <div class="photographyWebsiteModal modal">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <video autoplay src="media/wallpapers-1.mp4" class="video-media" loop controls></video>
+      <video autoplay src="media/wallpapers-2.mp4" class="video-media" loop></video>
+      <video autoplay src="media/wallpapers-3.mp4" class="video-media" loop></video>
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">Photography website interactions</h2>
+      <p>Magic made with AE + Figma + Unsplash - 2020</p>
+    </div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div>
+  
+  <div class="qacehomesModal modal">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <video autoplay src="media/qacehomes-PMS.mp4" class="video-media" loop controls></video>
+      <img loading="lazy" src="media/qacehomes-1.jpeg" alt="OKFN.org's Open Data Editor team photo cover" >
+      <video autoplay src="media/qacehomes-marketplace.mp4" class="video-media" loop controls></video>
+      <img loading="lazy" src="media/qacehomes-Homepage.jpg" alt="OKFN.org's Open Data Editor team photo cover" >
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">Qacehomes - Property management software</h2>
+      <p>Early stage startup seeking PMF. Led the design of the v1 Marketing site, and Product UI</p>
+    </div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div>
+  
+  <!-- <div class="okfnModal slideShow modal">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+  <div class="video_text_parent">
+  
+    <div class="mediaWrapper">
+      <img loading="lazy" src="media/okfn-14.jpg" alt="OKFN screenshots">
+  
+      <img loading="lazy" src="media/okfn-13.jpg" alt="OKFN screenshots">
+  
+      <div class="images-wrapper">
+        <video autoplay src="media/okfn-Deleting-a-file.mp4" class="video-media" loop></video>
+        <video autoplay src="media/okfn-6.mp4" class="video-media" loop></video>
+        <img loading="lazy" src="media/okfn-Modal-default.jpg" alt="OKFN screenshots" >
+        <img loading="lazy" src="media/okfn-Modal-Delete.jpg" alt="OKFN screenshots" >
+      </div>
+  
+      <img loading="lazy" src="media/okfn-nav-differences.jpg" alt="OKFN screenshots">
+  
+      <img loading="lazy" src="media/okfn-design-system.jpg" alt="OKFN screenshots">
+  
+      <img loading="lazy" src="media/okfn-v2-collaboration.jpg" alt="OKFN screenshots">
+    </div>
+  
+    <div class="textWrapper">
+      <h2 class="mediaTitle">OKFN - Rebuilding an open source, non-linear Data management app</h2>
+      <p>OKFN.org is a EU-based, Gov-tech nonprofit that advocates for Open knowledge through Data, community, & software. I was hired as the UX/UI Consultant to lead design while working alongside a cross-functional team of PMs and Engineers to solve the low adoption-rate problem, and retarget the app at a new usergroup: non-technical data professionals.
+      </p>
+      <ul>
+        <li>I delivered new dashboards, optimized workflows & a refreshed design system</li>
+        <li>One impact is this leading to a new free course on the ODE</li>
+        <li>Another is increased advocacy efforts through new training camps for Journalists</li>
+      </ul>
+      </div>
+  
+    <div class="btns"><a href="https://iamfaithkenny.framer.website/okfn" target="_blank" rel="noopener noreferrer">
+      <button class="email">Read case study<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="hsla(234, 36%, 5%, 1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></button>
+    </a></div>
+  
+  </div>
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div> -->
+  
+  <div class="ropaModal slideShow modal ">
+  <div class="modal_absolute">
+  <div class="modalContent_buttonWrapper">
+
+  <button class="closeButton" tabindex="0" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 12L12 4M4 4L12 12" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  </div>
+  </div>
+  
+  </div>
+  
+  

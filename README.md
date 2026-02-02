@@ -7,3 +7,12 @@ Faith Kenny website
 This will be hosted on Vercel. some codepushing, and slanging up here.
 
 I love it!
+
+
+Old modals are in all-modals-temp
+
+new modals are in the modals folder
+
+they are loaded in by the modal-loader.js
+
+ropa 

@@ -93,6 +93,11 @@ window.addEventListener('resize', function(event) {
   const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
   const qacehomesModalCloseBtn = document.querySelector(".qacehomesModal .closeButton");
 
+  const ropa = document.querySelector(".ropa");
+  const ropaModal = document.querySelector(".ropaModal");
+  const ropaModalVideo = document.querySelector(".ropaModal video");
+  const ropaModalCloseBtn = document.querySelector(".ropaModal .closeButton");
+
   
 okfn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -148,6 +153,21 @@ qacehomes.addEventListener("click", (e) => {
 
 qacehomesModalCloseBtn.addEventListener("click", (e) => {
   qacehomesModal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+
+ropa.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".ropaModal .modalContent_buttonWrapper").style.width = "auto"; /* This line is what let the width flex because it's a case study */
+  document.querySelector(".ropaModal .mediaWrapper").style.maxHeight = "50vh";
+  ropaModalVideo.setAttribute("autoplay", "true");
+  ropaModal.style.display = "flex";
+  overlay.style.display = "flex";
+});
+
+ropaModalCloseBtn.addEventListener("click", (e) => {
+  ropaModal.style.display = "none";
   overlay.style.display = "none";
 });
 
