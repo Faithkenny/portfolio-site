@@ -1,13 +1,3 @@
-:root {
-    font-family: 'Inter display', 'Inter', sans-serif;
-}
-
-/* Fallback for browsers with variable font support */
-@supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
-}
-
-
 /* Global styles 
 -----------------------------------------------*/
 :root {
@@ -68,7 +58,7 @@
     --purple-300: #DBBEFF;
     --purple-200: #EFD8FF;
     --purple-100: #F4EBFF;
-    --purple-100: #F8F4FD;
+    --purple-50: #F8F4FD;
     
     --red-900: #460809;
     --red-800: #55160C;
@@ -81,7 +71,8 @@
     --red-100: #FFC9C9;
     --red-50: #FFFBFB;
   
-    --text-nav-ul-li-a: var(--warm-gray-700);
+    --text-nav-ul-li-a: var(--warm-gray-500);
+    --text-nav-ul-li-a-darker: var(--warm-gray-700);
     --text-nav-cta: var(--cool-gray-900);
 
     --text-s-01-page-title-h1: var(--warm-gray-900);
@@ -121,6 +112,10 @@
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);
     --surface-danger: var(--red-50);
+    --surface-footer: var(--cool-gray-700);
+    --surface-overlay: hsla(217, 18%, 65%, 0.9);
+
+
 
     --border-danger: var(--red-300);
     --border-divs-wrapper: var(--true-gray-500);
@@ -131,58 +126,20 @@
     --border-old-ropas-wrapper: var(--cool-gray-100);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    --primary-text-color: var(--true-gray-100);
     --secondary-text-color: var(--true-gray-400);
-    --accent-text: var(--cool-gray-500);
     --white-color: var(--true-gray-0);
-
     --cta-color: var(--teal-500);
-
-
     --case-study-bg: var(--cool-gray-300);
-
     --secondary-text-size: 14px;
-    --text-color: var(--true-gray-700);
     --border-radius: 4px;
-    --media-items-color: var(--true-gray-400);
-    --media-items-font-size: 1.4rem;
     --video-wrapper-width: 380px;
     --video-wrapper-height: 320px;
     --footer-color: var(--cool-gray-50);
     --text-highlight-color: var(--teal-500);
 }
-
-::selection {
-  background-color: var(--text-highlight-color);
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.6rem;
-    background-color: var(--surface-body-bg); 
-    margin: 0;
-}
-body * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .dark-mode {
     --text-nav-ul-li-a: var(--warm-gray-400);
+    --text-nav-ul-li-a-darker: var(--warm-gray-400);
     --text-nav-cta: var(--cool-gray-900);
 
     --text-s-01-page-title-h1: var(--true-gray-0);
@@ -222,7 +179,8 @@ body * {
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);
     --surface-danger: var(--red-50);
-    --surface-overlay: hsla(36, 18%, 65%, 0.9);
+    --surface-footer: var(--cool-gray-700);
+    --surface-overlay: hsla(0, 3%, 7%, 0.9);
 
 
     --border-danger: var(--red-700);
@@ -233,6 +191,24 @@ body * {
     --border-audience: var(--purple-500);
     --border-old-ropas-wrapper: var(--cool-gray-100);
 
+}
+
+::selection {
+  background-color: var(--text-highlight-color);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.6rem;
+    background-color: var(--surface-body-bg); 
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* .page-wrapper {
@@ -411,33 +387,26 @@ section#page-title {
 }
 h1.page-title {
     color: var(--text-s-01-page-title-h1);
+    font-family: "Inter Display", "Inter", sans-serif;
     font-size: 2rem;
-    line-height: 1.9rem;
-    font-weight: medium;
+    line-height: 2.4rem;
+    font-weight: 500;
     text-align: center;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.015px;
     margin: 0;
     
     width: 274px;
     max-width: 80%;
-    /* text-align: left; */
-    font-family: "inter display";
-    /* font-size: 1.25rem; */
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.015px;
 }
 #page-title p {
     font-size: 1.1rem;
-    width: 320px;
     line-height: 1.6rem;
     letter-spacing: -0.25px;
     text-align: left;
     margin-top: 0;
 
-    width: 217px;
-    max-width: 80%;
+    width: 60%;
+    max-width: 274px%;
     color: var(--text-s-01-page-title-p);
     text-align: center;
     font-style: normal;
@@ -494,7 +463,7 @@ h3.page-title {
 }
 .s-02 .product-goal h3 {
     color: var(--text-s-02-product-goal-h3);
-    font-family: Inter;
+    font-family: "Inter Display", "Inter", sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
@@ -524,7 +493,7 @@ h3.page-title {
     font-weight: normal;
     margin: 0;
     line-height: 2.3rem; 
-    letter-spacing: -2%;
+    letter-spacing: -0.2px;
 }
 
 .goal-reasons {
@@ -687,7 +656,7 @@ line-height: 2.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 2.2rem; /* 128.571% */
-    letter-spacing: -0.2%;
+    letter-spacing: -0.2px;
     min-width: 80%;
 }
 
@@ -706,7 +675,7 @@ line-height: 2.2rem;
 }
 .s-05 div {
     color: var(--text-audience);
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
@@ -846,7 +815,7 @@ footer ul li {
 }
 
 /* Optional: show zoom cursor */
-img {
+.lightbox-target img {
   cursor: zoom-in;
 }
 
