@@ -406,7 +406,7 @@ h1.page-title {
     margin-top: 0;
 
     width: 60%;
-    max-width: 274px%;
+    max-width: 274px;
     color: var(--text-s-01-page-title-p);
     text-align: center;
     font-style: normal;
