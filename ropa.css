@@ -211,23 +211,23 @@ body * {
     padding: 0;
 }
 
-/* .page-wrapper {
+.page-wrapper {
     display: none;
-} */
+}
 
-/* .info-wrapper {
+ .info-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-} */
+} 
 
-/* .mobile-info{
+ .mobile-info{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: ;
+    width: 100%;
     margin: 0 auto;
     font-size: 1.2rem;
     font-weight: 500;
@@ -239,7 +239,118 @@ body * {
     border-radius: 0.4rem;
     color: var(--cool-gray-900);
 
-} */
+} 
+
+
+nav.header {
+    width: 100%;
+    background-color: var(--surface-nav);
+    backdrop-filter: blur(0.6rem);
+    border-bottom: 1px solid transparent; /* Set a transparent border */
+    border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
+    border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-around;  
+    margin: 0 3.2rem 1.6rem;
+    padding: 1rem;
+    z-index: 999;
+}
+.logo {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    flex: 1 0 auto;
+    margin-left: 1.6rem;
+}
+.logo img {
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    border: 0.2rem solid var(--border-nav-logo-img);
+}
+.logo p {
+    color: var(--text-nav-ul-li-a);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+.btns {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.btns button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--cta-color);
+    padding: 0.5rem 1.0rem;
+    display: flex;
+    width: 9rem;
+    justify-content: center;
+    border-radius: 0.4rem;
+    color: var(--gray-900);
+
+}
+.btns button {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.btns button.is-changing {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 1.6rem;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.4rem;
+}
+.nav-links a {
+    color: var(--text-nav-ul-li-a);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.1;
+    text-decoration: none;  
+}
+li.divider {
+    color: hsla(224, 72%, 4%, 0.05);
+}
+.dropdown-menu-wrapper, .left-icon {
+    display: none;
+}
+.right-icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    stroke: var(--border-nav-icon);
+    background-color: none; /* This is hardcoded in Javascript ropa.js */
+}
+.hide-icon {
+    display: none;
+}
+.show-icon {
+    display: block;
+}
+
 
 @media screen and (max-width:796px){
 
@@ -405,7 +516,7 @@ h1.page-title {
     text-align: left;
     margin-top: 0;
 
-    width: 60%;
+    width: 80%;
     max-width: 274px;
     color: var(--text-s-01-page-title-p);
     text-align: center;
