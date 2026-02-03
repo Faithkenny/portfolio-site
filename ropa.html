@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://rsms.me"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter-display.css"/>
-    <link rel="stylesheet" href="ropa.css">
+    <link rel="stylesheet" href="ropa-global.css">
+    <link rel="stylesheet" href="ropa-mobile.css" media="screen and (min-width: 10px) and (max-width: 796px)">
+    <link rel="stylesheet" href="ropa-desktop.css" media="screen and (min-width: 797px) and (max-width: 1920px)">
     <script defer src="mobile_nav.js"></script>
     <script defer src="modules.js"></script>
 
@@ -38,7 +40,7 @@
 
 
   </head>
-  <body class="ropa dark-mode">
+  <body class="ropa">
 
 <div class="page-wrapper">
     <nav class="header">
@@ -52,8 +54,9 @@
             </svg>
         </div>
         <div class="logo">
-            <a href="index.html"><img loading="lazy" src="media/thumbnail-32px.png" alt="Faith Kenny's avatar"></a>
+            <a href="index.html"><img loading="lazy" src="media/thumbnail-32px.png" alt="Faith Kenny's avatar">
             <p>Faith Kenny</p>
+        </a>
         </div>
     
         <aside>
@@ -107,77 +110,103 @@
       <div><img src="media/ropa/title-image.png" alt=""></div>
   </section>
 
-<section class="s-02">
-    <section class="product-goal">
-        <p>Product goal & Why it matters</p>
-        <h3 class="page-title">Why this Product exists</h3>
+<section class="s-02-and-s-03">
+    <section class="s-02 more-room">
+        <section class="product-goal">
+            <p>Why this product exists</p>
+            <h3 class="page-title">Enterprise teams need robust workflows to manage 
+                GDPR compliance</h3>
+        </section>
+        <section class="product-goal-details">
+            <p>Since the passing of EU GDPR bill into law, Companies now have to document the decisions they make around the collection, use and storage of personal data. This is called Record of processing activity (ROPA).</p>
+
+            <p>The process of managing ROPAs was through spreadsheets. This method is laborious and tedious. This is a solid market opportunity.</p>
+    
+            <div class="goal-reasons-wrapper">
+                <div class="goal-reasons">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <g clip-path="url(#clip0_8030_254746)">
+                                <path d="M10.0004 15V10.625M10.0004 10.625C10.4221 10.6254 10.842 10.5724 11.2504 10.4675M10.0004 10.625C9.57878 10.6254 9.15879 10.5724 8.75042 10.4675M11.8754 16.6992C10.6365 16.9345 9.36435 16.9345 8.12542 16.6992M11.2504 18.685C10.4194 18.772 9.58148 18.772 8.75042 18.685M11.8754 15V14.84C11.8754 14.0209 12.4238 13.3209 13.1321 12.91C14.3221 12.2209 15.2516 11.1585 15.7766 9.88757C16.3016 8.61659 16.3928 7.20794 16.036 5.87989C15.6792 4.55185 14.8944 3.37854 13.8031 2.54176C12.7119 1.70499 11.3751 1.25146 10 1.25146C8.62486 1.25146 7.28811 1.70499 6.19687 2.54176C5.10562 3.37854 4.32081 4.55185 3.96403 5.87989C3.60724 7.20794 3.69841 8.61659 4.22341 9.88757C4.7484 11.1585 5.67792 12.2209 6.86792 12.91C7.57625 13.3209 8.12542 14.0209 8.12542 14.84V15" stroke="#888480" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_8030_254746">
+                                  <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                              </defs>
+                        </svg>
+                    </div>
+                    <p class="goal-reason reason-1">
+                        Goal is to build a solution which significantly improves the experience.
+                    </p>
+                </div>
+                <div class="goal-reasons">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M1.875 15.625C6.32134 15.6214 10.7483 16.2102 15.0392 17.3758C15.645 17.5408 16.25 17.0908 16.25 16.4625V15.625M3.125 3.75V4.375C3.125 4.54076 3.05915 4.69973 2.94194 4.81694C2.82473 4.93415 2.66576 5 2.5 5H1.875M1.875 5V4.6875C1.875 4.17 2.295 3.75 2.8125 3.75H16.875M1.875 5V12.5M16.875 3.75V4.375C16.875 4.72 17.155 5 17.5 5H18.125M16.875 3.75H17.1875C17.705 3.75 18.125 4.17 18.125 4.6875V12.8125C18.125 13.33 17.705 13.75 17.1875 13.75H16.875M1.875 12.5V12.8125C1.875 13.0611 1.97377 13.2996 2.14959 13.4754C2.3254 13.6512 2.56386 13.75 2.8125 13.75H3.125M1.875 12.5H2.5C2.66576 12.5 2.82473 12.5658 2.94194 12.6831C3.05915 12.8003 3.125 12.9592 3.125 13.125V13.75M16.875 13.75V13.125C16.875 12.9592 16.9408 12.8003 17.0581 12.6831C17.1753 12.5658 17.3342 12.5 17.5 12.5H18.125M16.875 13.75H3.125M12.5 8.75C12.5 9.41304 12.2366 10.0489 11.7678 10.5178C11.2989 10.9866 10.663 11.25 10 11.25C9.33696 11.25 8.70107 10.9866 8.23223 10.5178C7.76339 10.0489 7.5 9.41304 7.5 8.75C7.5 8.08696 7.76339 7.45107 8.23223 6.98223C8.70107 6.51339 9.33696 6.25 10 6.25C10.663 6.25 11.2989 6.51339 11.7678 6.98223C12.2366 7.45107 12.5 8.08696 12.5 8.75ZM15 8.75H15.0067V8.75667H15V8.75ZM5 8.75H5.00667V8.75667H5V8.75Z" stroke="#888480" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="goal-reason">
+                        This new web app provides another source of revenue for the company.
+                    </p>
+                </div>
+            </div>
+    
+        </section>
     </section>
-    <section class="product-goal-details">
-        <p>Legal/Data teams are usually in charge of startup compliance documentation. The process of managing this ROPAs through spreadsheets is laborious and tedious.</p>
-
-        <div class="goal-reasons">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <g clip-path="url(#clip0_8030_254746)">
-                        <path d="M10.0004 15V10.625M10.0004 10.625C10.4221 10.6254 10.842 10.5724 11.2504 10.4675M10.0004 10.625C9.57878 10.6254 9.15879 10.5724 8.75042 10.4675M11.8754 16.6992C10.6365 16.9345 9.36435 16.9345 8.12542 16.6992M11.2504 18.685C10.4194 18.772 9.58148 18.772 8.75042 18.685M11.8754 15V14.84C11.8754 14.0209 12.4238 13.3209 13.1321 12.91C14.3221 12.2209 15.2516 11.1585 15.7766 9.88757C16.3016 8.61659 16.3928 7.20794 16.036 5.87989C15.6792 4.55185 14.8944 3.37854 13.8031 2.54176C12.7119 1.70499 11.3751 1.25146 10 1.25146C8.62486 1.25146 7.28811 1.70499 6.19687 2.54176C5.10562 3.37854 4.32081 4.55185 3.96403 5.87989C3.60724 7.20794 3.69841 8.61659 4.22341 9.88757C4.7484 11.1585 5.67792 12.2209 6.86792 12.91C7.57625 13.3209 8.12542 14.0209 8.12542 14.84V15" stroke="#888480" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_8030_254746">
-                          <rect width="20" height="20" fill="white"/>
-                        </clipPath>
-                      </defs>
-                </svg>
+    
+    <section class="s-03" data-details="high level audience">
+        <div class="customers">
+            <div class="icon-and-description">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M2.35139 13.2135C1.99837 10.9162 1.82186 9.76763 2.25617 8.74938C2.69047 7.73112 3.65403 7.03443 5.58114 5.64106L7.02099 4.6C9.41829 2.86667 10.6169 2 12 2C13.3831 2 14.5817 2.86667 16.979 4.6L18.4189 5.64106C20.346 7.03443 21.3095 7.73112 21.7438 8.74938C22.1781 9.76763 22.0016 10.9162 21.6486 13.2135L21.3476 15.1724C20.8471 18.4289 20.5969 20.0572 19.429 21.0286C18.2611 22 16.5537 22 13.1388 22H10.8612C7.44633 22 5.73891 22 4.571 21.0286C3.40309 20.0572 3.15287 18.4289 2.65243 15.1724L2.35139 13.2135Z" stroke="#8D33FF" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M11.25 13.25C12.4368 14.4368 14 15.6429 14 15.6429L16.1429 13.5C16.1429 13.5 14.9368 11.9368 13.75 10.75C12.5632 9.56319 11 8.35714 11 8.35714L8.85714 10.5C8.85714 10.5 10.0632 12.0632 11.25 13.25ZM11.25 13.25L7.5 17M16.5 13.1429L13.6429 16M11.3571 8L8.5 10.8571" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+    
+                <p class="icon-text">SaaS lawyers</p>
+    
             </div>
-            <p class="goal-reason reason-1">
-                Goal is to build a solution which significantly improves the experience.
-            </p>
-        </div>
-
-        <div class="goal-reasons">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M1.875 15.625C6.32134 15.6214 10.7483 16.2102 15.0392 17.3758C15.645 17.5408 16.25 17.0908 16.25 16.4625V15.625M3.125 3.75V4.375C3.125 4.54076 3.05915 4.69973 2.94194 4.81694C2.82473 4.93415 2.66576 5 2.5 5H1.875M1.875 5V4.6875C1.875 4.17 2.295 3.75 2.8125 3.75H16.875M1.875 5V12.5M16.875 3.75V4.375C16.875 4.72 17.155 5 17.5 5H18.125M16.875 3.75H17.1875C17.705 3.75 18.125 4.17 18.125 4.6875V12.8125C18.125 13.33 17.705 13.75 17.1875 13.75H16.875M1.875 12.5V12.8125C1.875 13.0611 1.97377 13.2996 2.14959 13.4754C2.3254 13.6512 2.56386 13.75 2.8125 13.75H3.125M1.875 12.5H2.5C2.66576 12.5 2.82473 12.5658 2.94194 12.6831C3.05915 12.8003 3.125 12.9592 3.125 13.125V13.75M16.875 13.75V13.125C16.875 12.9592 16.9408 12.8003 17.0581 12.6831C17.1753 12.5658 17.3342 12.5 17.5 12.5H18.125M16.875 13.75H3.125M12.5 8.75C12.5 9.41304 12.2366 10.0489 11.7678 10.5178C11.2989 10.9866 10.663 11.25 10 11.25C9.33696 11.25 8.70107 10.9866 8.23223 10.5178C7.76339 10.0489 7.5 9.41304 7.5 8.75C7.5 8.08696 7.76339 7.45107 8.23223 6.98223C8.70107 6.51339 9.33696 6.25 10 6.25C10.663 6.25 11.2989 6.51339 11.7678 6.98223C12.2366 7.45107 12.5 8.08696 12.5 8.75ZM15 8.75H15.0067V8.75667H15V8.75ZM5 8.75H5.00667V8.75667H5V8.75Z" stroke="#888480" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+    
+            <div class="icon-and-description">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M11 8C15.4183 8 19 6.65685 19 5C19 3.34315 15.4183 2 11 2C6.58172 2 3 3.34315 3 5C3 6.65685 6.58172 8 11 8Z" stroke="#8D33FF" stroke-width="1.5"/>
+                    <path d="M6 10.8418C6.60158 11.0226 7.27434 11.1716 8 11.2817" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M3 12C3 13.5299 6.05369 14.7923 10 14.9768" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M6 17.8418C6.60158 18.0226 7.27434 18.1716 8 18.2817" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M11 22C6.58172 22 3 20.6569 3 19V5M19 5V11" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 20.7143V22M17 20.7143C15.8432 20.7143 14.8241 20.1461 14.2263 19.2833M17 20.7143C18.1568 20.7143 19.1759 20.1461 19.7737 19.2833M14.2263 19.2833L13.0004 20.0714M14.2263 19.2833C13.8728 18.773 13.6667 18.1597 13.6667 17.5C13.6667 16.8403 13.8727 16.2271 14.2262 15.7169M19.7737 19.2833L20.9996 20.0714M19.7737 19.2833C20.1272 18.773 20.3333 18.1597 20.3333 17.5C20.3333 16.8403 20.1273 16.2271 19.7738 15.7169M17 14.2857C18.1569 14.2857 19.1761 14.854 19.7738 15.7169M17 14.2857C15.8431 14.2857 14.8239 14.854 14.2262 15.7169M17 14.2857V13M19.7738 15.7169L21 14.9286M14.2262 15.7169L13 14.9286" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+    
+                <p class="icon-text">Data officers</p>
+    
             </div>
-            <p class="goal-reason">
-                This new web app provides another source of revenue for the company.
-            </p>
         </div>
-
+        <p class="customers-details">Customers/High level audience</p>
     </section>
 </section>
 
-<section class="s-03" data-details="high level audience">
-    <div class="customers">
-        <div class="icon-and-description">
-            <div class="icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M2.35139 13.2135C1.99837 10.9162 1.82186 9.76763 2.25617 8.74938C2.69047 7.73112 3.65403 7.03443 5.58114 5.64106L7.02099 4.6C9.41829 2.86667 10.6169 2 12 2C13.3831 2 14.5817 2.86667 16.979 4.6L18.4189 5.64106C20.346 7.03443 21.3095 7.73112 21.7438 8.74938C22.1781 9.76763 22.0016 10.9162 21.6486 13.2135L21.3476 15.1724C20.8471 18.4289 20.5969 20.0572 19.429 21.0286C18.2611 22 16.5537 22 13.1388 22H10.8612C7.44633 22 5.73891 22 4.571 21.0286C3.40309 20.0572 3.15287 18.4289 2.65243 15.1724L2.35139 13.2135Z" stroke="#8D33FF" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M11.25 13.25C12.4368 14.4368 14 15.6429 14 15.6429L16.1429 13.5C16.1429 13.5 14.9368 11.9368 13.75 10.75C12.5632 9.56319 11 8.35714 11 8.35714L8.85714 10.5C8.85714 10.5 10.0632 12.0632 11.25 13.25ZM11.25 13.25L7.5 17M16.5 13.1429L13.6429 16M11.3571 8L8.5 10.8571" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
+<section class="s-02-and-s-03">
+    <section class="s-03 more-room" data-details="high level audience">
+            <div><img src="media/ropa/title-image.png" alt="" width="240px"></div>
 
-            <p class="icon-text">SaaS lawyers</p>
+    </section>
 
-        </div>
+    <section class="s-02">
+        <section class="product-goal">
+            <p>Why it matters</p>
+            <h3 class="page-title">Data protection is now directly tied to a company’s bottom line</h3>
+        </section>
+        <section class="product-goal-details">
+            <p>Fines for companies that fail to comply with the GDPR Data privacy law can range from 2% - 4% of annual global revenue.</p>
+    
+        </section>
+    </section>
+    
 
-        <div class="icon-and-description">
-            <div class="icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M11 8C15.4183 8 19 6.65685 19 5C19 3.34315 15.4183 2 11 2C6.58172 2 3 3.34315 3 5C3 6.65685 6.58172 8 11 8Z" stroke="#8D33FF" stroke-width="1.5"/>
-                <path d="M6 10.8418C6.60158 11.0226 7.27434 11.1716 8 11.2817" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3 12C3 13.5299 6.05369 14.7923 10 14.9768" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M6 17.8418C6.60158 18.0226 7.27434 18.1716 8 18.2817" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M11 22C6.58172 22 3 20.6569 3 19V5M19 5V11" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17 20.7143V22M17 20.7143C15.8432 20.7143 14.8241 20.1461 14.2263 19.2833M17 20.7143C18.1568 20.7143 19.1759 20.1461 19.7737 19.2833M14.2263 19.2833L13.0004 20.0714M14.2263 19.2833C13.8728 18.773 13.6667 18.1597 13.6667 17.5C13.6667 16.8403 13.8727 16.2271 14.2262 15.7169M19.7737 19.2833L20.9996 20.0714M19.7737 19.2833C20.1272 18.773 20.3333 18.1597 20.3333 17.5C20.3333 16.8403 20.1273 16.2271 19.7738 15.7169M17 14.2857C18.1569 14.2857 19.1761 14.854 19.7738 15.7169M17 14.2857C15.8431 14.2857 14.8239 14.854 14.2262 15.7169M17 14.2857V13M19.7738 15.7169L21 14.9286M14.2262 15.7169L13 14.9286" stroke="#8D33FF" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-            </div>
-
-            <p class="icon-text">Data officers</p>
-
-        </div>
-    </div>
-    <p class="customers-details">Customers/High level audience</p>
 </section>
   
 <section class="s-04" data-details="page key markers component">
@@ -208,7 +237,7 @@
     
     <img src="media/ropa/ropa-context-of-working-3.png" alt="">
 
-    <p class="ropa-meaning">ROPA is a compliance document mandated by the EU GDPR laws for startups that collect user personal data. This product makes the filing and management more efficient.</p>
+    <p class="ropa-def">ROPA is a compliance document mandated by the EU GDPR laws for startups that collect user personal data. This product makes the filing and management more efficient.</p>
     </div>
 </section>
 
@@ -233,21 +262,26 @@
                     </div>
                     <h2 class="page-title">Tracking data sources, assigning records to team members</h2>
                 </div>
-                <p>A good solution will also acknowledge the user’s existing mental model</p>
+                <p class="ropa-def">A good solution acknowledges the user’s existing mental model</p>
             </div>
         </div>
 </section>
 
 <section class="s-06-sections">
     
-    <section class="s-06 s-05 s-01 ">
-        <div><img src="media/ropa/Data-Inventory-Normal-screen.png" alt=""></div>
-        <p class="ropa-meaning">A way to view manually record inputs, & generated records from the systems</p>
-    </section>
-    
-    <section class="s-06 s-05 s-01">
-        <div class="teal-bg"><img src="media/ropa/Data-Inventory-add-new-records-screen.png" alt=""></div>
-        <p class="ropa-meaning">A way to manually add records</p>
+    <section class="griddy-wrap">
+        <section class="s-06 s-05 s-01 hide">
+            <div><img src="media/ropa/Data-Inventory-Normal-screen.png" alt=""></div>
+            <p class="ropa-meaning">A way to view manually record inputs, & generated records from the systems</p>
+        </section>
+        <section class="s-06 s-05 s-01">
+            <div class="teal-bg"><img src="media/ropa/Data-Inventory-add-new-records-screen.png" alt=""></div>
+            <p>A way to manually add records</p>
+        </section>
+        <section class="s-06 s-05 s-01">
+            <div class="teal-bg"><img src="media/ropa/Data-Inventory-add-new-records-screen.png" alt=""></div>
+            <p>A way to manually add records</p>
+        </section>
     </section>
     
     <section class="s-06 s-05 s-01 ">

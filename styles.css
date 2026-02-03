@@ -399,7 +399,7 @@ main{
     display: none !important; 
 }
 
-section.work, section.work a{
+section.work {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
