@@ -1,4 +1,10 @@
-
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
+  
 
 .s-01 {
     display: flex;
@@ -18,7 +24,7 @@ section#page-title {
     margin-left: 18rem;
 }
 h1.page-title {
-    /* color: var(--text-s-01-page-title-h1, #171412); */
+    color: var(--text-s-01-page-title-h1, #171412);
     font-family: "Inter Display", "Inter", sans-serif;
     font-size: 7.4rem;
     font-weight: 400;
