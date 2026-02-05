@@ -62,6 +62,16 @@ h3.page-title {
     width: 98%;
 }
 
+
+.section2 {
+    width: 100%;
+    margin: 1rem 0 2rem;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2%;
+    gap: 1.8rem;
+}
+
 .s-02 {
     display: flex;
     min-width: 359px;
@@ -85,11 +95,12 @@ h3.page-title {
 .s-02 .product-goal h3 {
     color: var(--text-s-02-product-goal-h3);
     font-family: "Inter Display", "Inter", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
+    line-height: 2.2rem;
     /* line-height: normal; */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.2px;
     margin: 0;
     width: 80%;
     /* border: 1px solid red; */
@@ -126,6 +137,11 @@ h3.page-title {
     flex-direction: row;
     align-items: flex-start;
     gap: 8px;
+}
+.goal-reasons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .goal-reasons > div {
@@ -170,7 +186,7 @@ h3.page-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     /* border: 1px solid red; */
 }
 .icon-wrapper {
@@ -178,12 +194,10 @@ h3.page-title {
     /* width: 54px;*/
     width: 100%;
     height: 54px;
-    padding: 1.6rem;
+    /* padding: 1.6rem; */
     justify-content: center;
     align-items: center;
-    background-color: var(--states-total-white);
     border-radius: 0.8rem;
-    border: 1px solid var(--border-audience);
 }
 .icon-text {
     color: var(--text-audience);
@@ -202,6 +216,9 @@ h3.page-title {
     font-style: normal;
     font-weight: 500;
     line-height: 1rem; 
+}
+.problem-statement {
+    background-image: url("media/ropa/paper-notebook.jpg") !important;
 }
 
 

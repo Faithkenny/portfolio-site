@@ -109,6 +109,22 @@ h1.page-title {
     line-height: 1.6rem;
     margin: 0;
 }
+.problem-statement {
+    text-align: center;
+    color: var(--teal-900);
+    font-size: 1.8rem;
+    opacity: 1;
+    font-style: normal;
+    font-weight: 5=400;
+    line-height: 2.6rem;
+    font-family: "Inter display", sans-serif;
+    background-image: url("media/ropa/papers-combined.png") !important;
+    background-position:0px 0px, left 1em bottom 1em;
+    background-color: var(--true-gray-300);
+}
+.caption-pilcrow {
+    width: 80%;
+}
 .product-goal-details {
     display: flex;
     flex-direction: column;
