@@ -105,7 +105,7 @@
     --surface-icon-bg: var(--cool-gray-100);
     --surface-default-bg: var(--cool-gray-100);
     --surface-s1-bg: var(--cool-gray-00);
-    --surface-s4-bg: var(--true-gray-0);
+    --surface-s4-bg: var(--cool-gray-700);
     --surface-dark-bg: var(--cool-gray-700);
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);
@@ -116,7 +116,7 @@
 
 
     --border-danger: var(--red-300);
-    --border-divs-wrapper: var(--true-gray-500);
+    --border-divs-wrapper: var(--true-gray-200);
     --border-ul-li: hsla(224, 72%, 4%, 0.05);
     --border-nav-logo-img: var(--cool-gray-300);
     --border-nav-icon: var(--cool-gray-400);
@@ -148,7 +148,7 @@
     --text-s-02-product-goal-details-p: var(--warm-gray-400);
     --text-s-02-product-goal-reasons: var(--warm-gray-300);
 
-    --text-audience: var(--cool-gray-300);
+    --text-audience: var(--warm-gray-600);
 
     --text-s-04-caption: var(--warm-gray-500);
     --text-s-04-h2: var(--cool-gray-300);
@@ -172,7 +172,7 @@
     --surface-icon-bg: var(--warm-gray-700);
     --surface-default-bg: var(--cool-gray-100);
     --surface-s1-bg: var(--warm-gray-700);
-    --surface-s4-bg: var(--warm-gray-700);
+    --surface-s4-bg: var(--cool-gray-700);
     --surface-dark-bg: var(--cool-gray-700);
     --surface-teal-bg: var(--teal-100);
     --surface-purple-bg: var(--purple-200);

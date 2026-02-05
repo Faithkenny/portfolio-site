@@ -1,11 +1,12 @@
 
 .page-wrapper {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
     width: 100%;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
+    justify-content: stretch; 
 }
 nav.header {
     width: 100%;
@@ -20,7 +21,6 @@ nav.header {
     flex-direction: row;
     align-items: center;  
     justify-content: space-around;  
-    margin: 0 3.2rem 1.6rem;
     padding: 1rem;
     z-index: 999;
 }
