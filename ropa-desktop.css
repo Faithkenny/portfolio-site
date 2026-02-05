@@ -115,7 +115,7 @@ h1.page-title {
     font-size: 1.8rem;
     opacity: 1;
     font-style: normal;
-    font-weight: 5=400;
+    font-weight: 500;
     line-height: 2.6rem;
     font-family: "Inter display", sans-serif;
     background-image: url("media/ropa/papers-combined.png") !important;
@@ -160,7 +160,6 @@ h1.page-title {
     color: var(--text-s-02-product-goal-reasons);
     width: 90%;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 2.0rem; 
     letter-spacing: -0.2px;
@@ -200,6 +199,7 @@ h1.page-title {
     align-items: center;
 } 
 
+
 /* The small callouts */
 .section3 {
     display: flex;
@@ -225,8 +225,12 @@ h1.page-title {
 }
 
 .top-context {
-    display: flex;
-    gap: 0.4rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.6rem;
 }
 .top-context .caption, .customer-caption {
     color: var(--text-s-04-caption);
