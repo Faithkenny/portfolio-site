@@ -133,3 +133,38 @@ ul.dropdown-menu li a {
     text-decoration: none;
     color: var(--text-nav-ul-li-a);
 }
+
+footer {
+    display: inline-flex;
+
+}
+footer nav {
+    width: 75%;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+footer p, ul  {
+    color: var(--secondary-text-color);
+    font-size: var(--secondary-text-size);
+    margin: 0;
+    /* font-weight: 500; */
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+    display: none;
+    gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+footer ul li {
+    margin: 0;
+}

@@ -70,12 +70,20 @@ h1.page-title {
 }
 
 .section2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    
+    margin: 4rem 0 4rem;
+    padding: 0 5%;
+}
+
+/* .section2 {
     display: flex;
     gap: 3rem;
     margin: 4rem 0 4rem;
     padding: 0 5%;
-    /* border: 1px solid red; */
-}
+} */
 
 .s-02 {
     display: flex;
@@ -391,47 +399,6 @@ img.special-border {
 
 
 
-
-
-footer {
-    background-color: var(--text-s-04-caption);
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    margin: 0;
-    margin-top: 2rem;
-    width: 100%;
-
-}
-footer nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-}
-footer p, ul  {
-    color: var(--text-footer-p-or-ul);
-    font-size: var(--secondary-text-size);
-    margin: 0;
-    /* font-weight: 500; */
-}
-
-footer ul {
-    list-style: none;
-    text-decoration: none;
-    display: none;
-    gap: 1.8rem;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-}
-footer ul li {
-    margin: 0;
-}
 .lightbox-overlay {
     display: none;
 }
