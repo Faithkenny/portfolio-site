@@ -455,6 +455,12 @@ img.special-border {
 }
 
 
+
+video, iframe {
+    width: 100%;
+}
+
+
 /* ---------- Lightbox ---------- */
 .lightbox-overlay {
   position: fixed;

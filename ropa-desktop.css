@@ -418,7 +418,9 @@ img.special-border {
 .special-pink {
     background-color: var(--surface-pink-special) !important;
 }
-
+video, iframe {
+    width: 75%;
+}
 
 
 .lightbox-overlay {
