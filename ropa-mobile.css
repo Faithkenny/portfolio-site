@@ -53,7 +53,7 @@ h1.page-title {
     /* background: var(--surface-s1-bg); */
     max-width: 96%;
     /* padding: 1.6rem 1.2rem; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .s-01 img {
@@ -76,7 +76,7 @@ h1.page-title {
     align-items: flex-start;
     gap: 1rem;
     padding: 0 1.4rem;
-    margin: 1rem 0;
+    margin: 2.4rem 0;
 }
 
 .product-goal {

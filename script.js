@@ -67,104 +67,101 @@ window.addEventListener('resize', function(event) {
 
   // Each work item
 
-  // need to grab the video so I can set the autoplay to true
-  const designChallenge = document.querySelector(".designChallenge");
-  const designChallengeModal = document.querySelector(".designChallengeModal");
-  // const designChallengeVideo = document.querySelector(".designChallengeModal video");
-  const designChallengeModalCloseBtn = document.querySelector(".designChallengeModal .closeButton");
+//   const designChallenge = document.querySelector(".designChallenge");
+//   const designChallengeModal = document.querySelector(".designChallengeModal");
+//   const designChallengeModalCloseBtn = document.querySelector(".designChallengeModal .closeButton");
 
-  const okfn = document.querySelector(".okfn");
-  const okfnModal = document.querySelector(".okfnModal");
-  const okfnVideo = document.querySelector(".okfnModal video");
-  const okfnModalCloseBtn = document.querySelector(".okfnModal .closeButton");
+//   const okfn = document.querySelector(".okfn");
+//   const okfnModal = document.querySelector(".okfnModal");
+//   const okfnVideo = document.querySelector(".okfnModal video");
+//   const okfnModalCloseBtn = document.querySelector(".okfnModal .closeButton");
 
-  const vanitylvrs = document.querySelector(".vanitylvrs");
-  const vanitylvrsModal = document.querySelector(".vanitylvrsModal");
-  const vanitylvrsModalVideo = document.querySelector(".vanitylvrsModal video");
-  const vanitylvrsModalCloseBtn = document.querySelector(".vanitylvrsModal .closeButton");
+//   const vanitylvrs = document.querySelector(".vanitylvrs");
+//   const vanitylvrsModal = document.querySelector(".vanitylvrsModal");
+//   const vanitylvrsModalVideo = document.querySelector(".vanitylvrsModal video");
+//   const vanitylvrsModalCloseBtn = document.querySelector(".vanitylvrsModal .closeButton");
 
-  const wallpapers = document.querySelector(".wallpapers");
-  const wallpapersModal = document.querySelector(".wallpapersModal");
-  const wallpapersModalVideo = document.querySelector(".wallpapersModal video");
-  const wallpapersModalCloseBtn = document.querySelector(".wallpapersModal .closeButton");
+//   const wallpapers = document.querySelector(".wallpapers");
+//   const wallpapersModal = document.querySelector(".wallpapersModal");
+//   const wallpapersModalVideo = document.querySelector(".wallpapersModal video");
+//   const wallpapersModalCloseBtn = document.querySelector(".wallpapersModal .closeButton");
 
-  const qacehomes = document.querySelector(".qacehomes");
-  const qacehomesModal = document.querySelector(".qacehomesModal");
-  const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
-  const qacehomesModalCloseBtn = document.querySelector(".qacehomesModal .closeButton");
+//   const qacehomes = document.querySelector(".qacehomes");
+//   const qacehomesModal = document.querySelector(".qacehomesModal");
+//   const qacehomesModalVideo = document.querySelector(".qacehomesModal video");
+//   const qacehomesModalCloseBtn = document.querySelector(".qacehomesModal .closeButton");
 
   
-okfn.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.querySelector(".okfnModal .modalContent_buttonWrapper").style.width = "auto";
-      document.querySelector(".okfnModal .mediaWrapper").style.maxHeight = "56vh";
-  okfnVideo.setAttribute("autoplay", "true");
-  okfnModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
+// okfn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   document.querySelector(".okfnModal .modalContent_buttonWrapper").style.width = "auto";
+//       document.querySelector(".okfnModal .mediaWrapper").style.maxHeight = "56vh";
+//   okfnVideo.setAttribute("autoplay", "true");
+//   okfnModal.style.display = "flex";
+//   overlay.style.display = "flex";
+// });
 
-okfnModalCloseBtn.addEventListener("click", (e) => {
-  okfnModal.style.display = "none";
-  overlay.style.display = "none";
-});
+// okfnModalCloseBtn.addEventListener("click", (e) => {
+//   okfnModal.style.display = "none";
+//   overlay.style.display = "none";
+// });
 
   
 
 
 
-vanitylvrs.addEventListener("click", (e) => {
-  e.preventDefault();
-  vanitylvrsModalVideo.setAttribute("autoplay", "true");
-  vanitylvrsModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
+// vanitylvrs.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   vanitylvrsModalVideo.setAttribute("autoplay", "true");
+//   vanitylvrsModal.style.display = "flex";
+//   overlay.style.display = "flex";
+// });
 
-vanitylvrsModalCloseBtn.addEventListener("click", (e) => {
-  vanitylvrsModal.style.display = "none";
-  overlay.style.display = "none";
-});
-
-
-wallpapers.addEventListener("click", (e) => {
-  e.preventDefault();
-  wallpapersModalVideo.setAttribute("autoplay", "true");
-  wallpapersModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
-
-wallpapersModalCloseBtn.addEventListener("click", (e) => {
-  wallpapersModal.style.display = "none";
-  overlay.style.display = "none";
-});
+// vanitylvrsModalCloseBtn.addEventListener("click", (e) => {
+//   vanitylvrsModal.style.display = "none";
+//   overlay.style.display = "none";
+// });
 
 
+// wallpapers.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   wallpapersModalVideo.setAttribute("autoplay", "true");
+//   wallpapersModal.style.display = "flex";
+//   overlay.style.display = "flex";
+// });
 
-qacehomes.addEventListener("click", (e) => {
-  e.preventDefault();
-  qacehomesModalVideo.setAttribute("autoplay", "true");
-  qacehomesModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
-
-qacehomesModalCloseBtn.addEventListener("click", (e) => {
-  qacehomesModal.style.display = "none";
-  overlay.style.display = "none";
-});
+// wallpapersModalCloseBtn.addEventListener("click", (e) => {
+//   wallpapersModal.style.display = "none";
+//   overlay.style.display = "none";
+// });
 
 
-designChallenge.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
-    document.querySelector(".mediaWrapper").style.maxHeight = "56vh";
-  // designChallengeVideo.setAttribute("autoplay", "true");
-  designChallengeModal.style.display = "flex";
-  overlay.style.display = "flex";
-});
 
-designChallengeModalCloseBtn.addEventListener("click", (e) => {
-  designChallengeModal.style.display = "none";
-  overlay.style.display = "none";
-});
+// qacehomes.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   qacehomesModalVideo.setAttribute("autoplay", "true");
+//   qacehomesModal.style.display = "flex";
+//   overlay.style.display = "flex";
+// });
+
+// qacehomesModalCloseBtn.addEventListener("click", (e) => {
+//   qacehomesModal.style.display = "none";
+//   overlay.style.display = "none";
+// });
+
+
+// designChallenge.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   document.querySelector(".modalContent_buttonWrapper").style.width = "auto";
+//     document.querySelector(".mediaWrapper").style.maxHeight = "56vh";
+//   designChallengeModal.style.display = "flex";
+//   overlay.style.display = "flex";
+// });
+
+// designChallengeModalCloseBtn.addEventListener("click", (e) => {
+//   designChallengeModal.style.display = "none";
+//   overlay.style.display = "none";
+// });
 
 
 

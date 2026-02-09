@@ -76,6 +76,12 @@
     --text-s-01-page-title-h1: var(--warm-gray-900);
     --text-s-01-page-title-p: var(--cool-gray-500);
 
+    --text-about-page-title-h1: var(--teal-900);
+    --text-about-page-aside-p: var(--warm-gray-600);
+    --text-about-page-aside-h3: var(--cool-gray-600);
+    --text-about-page-main-story-main-copy-p: var(--text-s-02-product-goal-details-p);
+
+
     --text-s-02-product-goal-h3: var(--cool-gray-700);
     --text-s-02-product-goal-caption: var(--teal-700);
     --text-s-02-product-goal-details-p: var(--cool-gray-500);
@@ -146,6 +152,12 @@
 
     --text-s-01-page-title-h1: var(--true-gray-0);
     --text-s-01-page-title-p: var(--warm-gray-400);
+
+    --text-about-page-title-h1: var(--true-gray-100);
+    --text-about-page-aside-p: var(--warm-gray-400);
+    --text-about-page-aside-h3: var(--cool-gray-400);
+    --text-about-page-main-story-main-copy-p: var(--text-s-02-product-goal-details-p);
+
 
     --text-s-02-product-goal-h3: var(--warm-gray-300);
     --text-s-02-product-goal-caption: var(--teal-700);

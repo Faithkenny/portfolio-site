@@ -77,7 +77,7 @@ nav.header {
   opacity: 0;
   transform: scale(0.98);
 }
-aside {
+nav.header aside {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ footer nav {
     justify-content: space-between;  
     font-size: 1.4rem;
     padding: 0 1.6rem;
-
+    text-align: center;
 }
 footer p, footer ul, footer a  {
     color: var(--secondary-text-color);

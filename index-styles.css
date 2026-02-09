@@ -9,7 +9,7 @@ section#page-title {
     align-items: center;
     gap: 0.4rem;
     width: 100%;
-    
+    /* border: 1px solid red; */
 }
 
 h1 {
@@ -25,7 +25,8 @@ h1 {
 }
 #page-title p {
     font-size: 1.4rem;
-    width: 421px;
+    /* width: 421px; */
+    width: 30%;
     color: var(--text-s-01-page-title-p);
     line-height: 1.8rem;
     letter-spacing: -0.25px;
