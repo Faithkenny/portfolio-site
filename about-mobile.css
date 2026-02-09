@@ -2,13 +2,18 @@
 .flex-container {
     display: inline-flex;
     justify-content: center;
-    height: 1080px;
+    height: 100vh;
     /* margin-top: 2rem; */
 }
 
 .main-image-left-wrapper {
     display: none;
 }
+/* .img-for-mobile {
+    background: url("media/about-aside-for-mobile.jpg") no-repeat;
+    background-color: red;
+    border: 1px solid brown;
+} */
 .img-for-mobile img {
     width: 100%;
     border-radius: 0.8rem;

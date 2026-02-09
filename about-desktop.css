@@ -1,19 +1,20 @@
 .flex-container {
     display: inline-flex;
     justify-content: center;
-    height: 1080px;
+    height: 100vh;
     /* margin-top: 2rem; */
 }
 
 .main-image-left-wrapper {
     /* width: 200px; */
-    background: url("media/about-aside-black-and-white.jpg") no-repeat;
+    background: var(--image-about);
     background-position: center;
     background-size: cover;
-    background-color: brown;
+    /* background-color: brown; */
     position: sticky;
 
 }
+
 .img-for-mobile {
     display: none;
 }
@@ -148,7 +149,7 @@ div.imago {
     align-items: center;
     gap: 1.2rem;
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 0.8rem;
 
 

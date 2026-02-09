@@ -81,6 +81,8 @@
     --text-about-page-aside-h3: var(--cool-gray-600);
     --text-about-page-main-story-main-copy-p: var(--text-s-02-product-goal-details-p);
 
+    --image-about: url("media/about-aside-black-and-white.jpg") no-repeat;
+
 
     --text-s-02-product-goal-h3: var(--cool-gray-700);
     --text-s-02-product-goal-caption: var(--teal-700);
@@ -157,6 +159,8 @@
     --text-about-page-aside-p: var(--warm-gray-400);
     --text-about-page-aside-h3: var(--cool-gray-400);
     --text-about-page-main-story-main-copy-p: var(--text-s-02-product-goal-details-p);
+
+    --image-about: url("media/about-aside.jpg") no-repeat;
 
 
     --text-s-02-product-goal-h3: var(--warm-gray-300);
