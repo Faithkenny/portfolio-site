@@ -105,11 +105,30 @@ main {
     padding: 0 2%;
     /* border: 1px solid red; */
 }
-aside p {
+aside p, .roles{
     color: var(--text-about-page-aside-p);
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.8rem;
+}
+.roles {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 2rem 0 0 1.4rem;
+}
+.roles li {
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    opacity: 0.8;
+
+}
+li .role-details {
+    opacity: 0.6;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
 }
 aside h3 {
     color: var(--text-about-page-aside-h3);

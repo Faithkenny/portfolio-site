@@ -101,11 +101,25 @@ main {
     flex: 1.2 1 0;
     /* border: 1px solid red; */
 }
-aside p {
+aside p, .roles {
     color: var(--text-about-page-aside-p);
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.8rem;
+}
+.roles {
+    width: 60%;
+    margin: 1rem 0 0 1.4rem;
+}
+.roles li {
+    margin-top: 0.4rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    opacity: 0.8;
+
+}
+li .role-details {
+    opacity: 0.6;
 }
 aside h3 {
     color: var(--text-about-page-aside-h3);
