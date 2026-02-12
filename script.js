@@ -7,11 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   
 
-if (window.innerWidth <= 796){
-  document.querySelectorAll(".desktop").forEach(item => item.remove());
+// if (window.innerWidth <= 796){
+//   document.querySelectorAll(".desktop").forEach(item => item.remove());
 
 
-}
+// }
 
 
   // const emailBtn = document.querySelector(".email");
@@ -26,7 +26,7 @@ if (window.innerWidth <= 796){
 window.addEventListener('resize', function(event) {
   // Code to run when the window is resized
   console.log('Window resized to: ' + window.innerWidth + 'px width and ' + window.innerHeight + 'px height');
-  // You can perform actions here, such as updating layout or recalculating dimensions
+  // You can perform actions here, such as updating layout or recalculating dimensions. {} This is for learning purposes 
 });
 
 
