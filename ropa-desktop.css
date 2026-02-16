@@ -180,7 +180,7 @@ h1.page-title {
     justify-content: center;
     gap: 4rem;
     width: 100%;
-    background-image: url(media/ropa/cloudy-bg.jpg);
+    background-image: url(media/cloudy-bg.png);
     height: 100%;
 
     border-radius: 0.8rem;
@@ -266,6 +266,9 @@ h2.powerpoint {
     line-height: 2.2rem; /* 128.571% */
     letter-spacing: -0.2px;
     width: 55%;
+}
+.md-xl {
+    width: 80%;
 }
 .call-out {
     border-radius: 0.4rem;
@@ -379,6 +382,19 @@ img.special-border {
     width: 100%;
     /* border: 1px solid red; */
 }
+.remove-wrapper-gap {
+    padding: 0 !important;
+    gap: 0;
+}
+.remove-wrapper-gap img {
+    border-radius: 0 !important;
+}
+.more-gap {
+    gap: 1.2rem;
+}
+.more-gap img {
+    border-radius: 0.4rem !important;
+}
 .img-wrapper:hover {
     border: 1px solid var(--border-img-wrappers);
 }
@@ -399,6 +415,13 @@ img.special-border {
     /* bottom: 0; */
 }
 
+.grid-images .remove-wrapper-gap img:hover {
+    border: none !important;
+}
+.grid-images .remove-wrapper-gap {
+    border: none !important;
+    padding: 0 !important;
+}
 .grid-images p {
     color: var(--text-audience);
     font-family: "Inter", sans-serif;
