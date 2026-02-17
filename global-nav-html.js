@@ -82,8 +82,7 @@ const literal = `<nav class="header">
 <div class="dropdown-menu-wrapper">
     <ul class="dropdown-menu">
         <li><a href="https://iamfaithkenny.framer.website/transcend" target="_blank" rel="noopener noreferrer">Old portfolio</a></li>
-         <!--          <li><a href="media/Faith-Kenny-CV-Product-designer&Frontend-developer.pdf" download="media/Faith-Kenny-CV-Product-designer&Frontend-developer.pdf">Download CV</a></li>
-<li><a href="">About me</a></li> -->
+        <li><a href="">About me</a></li> 
          <li><a href="">+1 (415) 312-7406</a></li>
          <li><div class="btns"><button class="email">Copy email</button></div></li>
       </ul>
