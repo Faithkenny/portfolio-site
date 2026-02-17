@@ -1,6 +1,6 @@
 /* page title starts here ------------------------------------- */
 
-section#title-texts {
+section.title-texts {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ h1.page-title {
     width: 274px;
     max-width: 80%;
 }
-#title-texts p {
+.title-texts p {
     font-size: 1.1rem;
     line-height: 1.7rem;
     letter-spacing: -0.25px;

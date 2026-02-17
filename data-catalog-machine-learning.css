@@ -1,33 +1,32 @@
 .inset-pill {
     font-size: 1.1rem;
     font-family: monospace;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 1.2rem;
     border-radius: 0.4rem;
     background: #FFFBFB;
     border: 1px dashed #AE7070;
     margin: 0.2rem;
 }
-.difference {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-}
-.difference div {
+.customer-wrapper {
     color: var(--text-s-04-p);
     font-size: 1.6rem;
     font-weight: normal;
     margin: 0;
     line-height: 2.3rem;
     letter-spacing: -0.2px;
-}
-
-.customer-wrapper {
     display: flex;
-    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-
-.audience-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.transcend-catalog {
+    border: 1px dashed #40DA6C;
+    background: #FDFDFD;
+    color: hsla(137, 69%, 33%, 1)
+}
+.old-catalogs {
+    border: 1px dashed #F26062;
+    background: rgba(253, 253, 253, 0.50);
+    color: hsla(359, 85%, 66%, 1)
 }

@@ -16,7 +16,7 @@
     width: 100%;
     /* padding-top: 2rem; */
 }
-section#title-texts {
+section.title-texts {
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ h1.page-title {
     width: 60%;
     max-width: 80%;
 }
-#title-texts p {
+.title-texts p {
     color: var(--text-s-01-page-title-p, #4A5464);
     font-family: "Inter";
     font-size: 2rem;
@@ -68,7 +68,28 @@ h1.page-title {
 .s-01 img {
     max-width: 96%;
 }
+p.outcome {
+    color: var(--text-s-04-p);
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 2.3rem;
+    letter-spacing: -0.2px;
+    /* opacity: 0.5; */
+    max-width: 40%;
+}
+p.next-caption {
+    color: var(--text-s-02-product-goal-details-p);
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 2.3rem;
+    letter-spacing: -0.2px;
+    padding-top: 1rem;
+    border-top: 1px solid var(--text-audience);
+    max-width: 70%;
 
+}
 .section2 {
     width: 100%;
     margin: 4rem 0 4rem;
@@ -398,7 +419,7 @@ img.special-border {
 .img-wrapper:hover {
     border: 1px solid var(--border-img-wrappers);
 }
-.grid-images img {
+.grid-images img, .grid-images video {
     width: 100%;
     border-radius: 0.4rem;
 
@@ -445,6 +466,11 @@ video, iframe {
     width: 75%;
 }
 
+.last img {
+    max-width: 100%;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+}
 
 .lightbox-overlay {
     display: none;
