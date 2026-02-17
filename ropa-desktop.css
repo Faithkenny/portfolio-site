@@ -76,7 +76,7 @@ p.outcome {
     line-height: 2.3rem;
     letter-spacing: -0.2px;
     /* opacity: 0.5; */
-    max-width: 40%;
+    max-width: 100%;
 }
 p.next-caption {
     color: var(--text-s-02-product-goal-details-p);
@@ -145,6 +145,17 @@ p.next-caption {
 }
 .caption-pilcrow {
     width: 80%;
+    color: var(--text-s-04-p);
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 2.3rem;
+    letter-spacing: -0.2px;
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
 }
 .product-goal-details {
     display: flex;
@@ -417,7 +428,7 @@ img.special-border {
     border-radius: 0.4rem !important;
 }
 .img-wrapper:hover {
-    border: 1px solid var(--border-img-wrappers);
+    /* border: 1px solid var(--border-img-wrappers); */
 }
 .grid-images img, .grid-images video {
     width: 100%;
@@ -428,20 +439,20 @@ img.special-border {
 }
 
 .grid-images img:hover {
-    width: 100%;
+    /* width: 100%;
     border-radius: 0.4rem;
     border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;
+    border-bottom-right-radius: 0rem; */
     /* position: relative; */
     /* bottom: 0; */
 }
 
 .grid-images .remove-wrapper-gap img:hover {
-    border: none !important;
+    /* border: none !important; */
 }
 .grid-images .remove-wrapper-gap {
-    border: none !important;
-    padding: 0 !important;
+    /* border: none !important; */
+    /* padding: 0 !important; */
 }
 .grid-images p {
     color: var(--text-audience);

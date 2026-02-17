@@ -30,3 +30,8 @@
     background: rgba(253, 253, 253, 0.50);
     color: hsla(359, 85%, 66%, 1)
 }
+img, video {
+    /* box-sizing: border-box; */
+    border: 1px solid var(--border-divs-wrapper-v2);
+    border-radius: 0.8rem;
+}

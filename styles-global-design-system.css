@@ -128,6 +128,7 @@
 
     --border-danger: var(--red-300);
     --border-divs-wrapper: var(--true-gray-200);
+    --border-divs-wrapper-v2: var(--true-gray-200);
     --border-ul-li: hsla(224, 72%, 4%, 0.05);
     --border-nav-logo-img: var(--cool-gray-300);
     --border-nav-icon: var(--cool-gray-400);
@@ -207,6 +208,7 @@
 
     --border-danger: var(--red-700);
     --border-divs-wrapper: var(--true-gray-500);
+    --border-divs-wrapper-v2: transparent;
     --border-ul-li: rgb(49, 44, 43);
     --border-nav-logo-img: var(--cool-gray-300);
     --border-nav-icon: var(--cool-gray-400);

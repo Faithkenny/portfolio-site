@@ -51,7 +51,8 @@ main{
     /* border: 1px solid red; */
 }
 
-.ropa-mobile, .designChallenge-mobile, .okfn-mobile {
+/* selects all classes containing the mobile string */
+[class*="mobile"] {
     display: none !important; 
 }
 
@@ -350,10 +351,10 @@ footer ul {
 
 @media screen and (max-width:796px){
 
-.ropa, .designChallenge, .okfn {
+    [class*="desktop"] {
     display: none !important; 
 }
-.ropa-mobile, .designChallenge-mobile, .okfn-mobile {
+[class*="mobile"]{
     display: flex !important; 
 }
 
