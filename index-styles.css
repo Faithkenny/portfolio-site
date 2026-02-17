@@ -388,6 +388,9 @@ nav.header {
     border: 0.2rem solid var(--border-nav-logo-img);
     display: block;
 }
+.hide-on-mobile {
+    display: none;
+}
 
 .btns {
     /* border: 1px solid red; */
