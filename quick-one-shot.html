@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Music Replica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        am: {
+                            red: '#fa233b',
+                            redhover: '#e01f35',
+                            side: '#331b23',
+                            sidegradient: '#251319',
+                            main: '#1a1618',
+                            top: '#1f1a1d',
+                            text: '#a1a1a6',
+                            hover: 'rgba(255,255,255,0.06)',
+                            border: 'rgba(255,255,255,0.08)',
+                            active: 'rgba(255,255,255,0.1)',
+                            widget: '#2c272a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    animation: {
+                        'eq-1': 'eq 1s ease-in-out infinite',
+                        'eq-2': 'eq 1.2s ease-in-out infinite 0.2s',
+                        'eq-3': 'eq 0.8s ease-in-out infinite 0.4s',
+                    },
+                    keyframes: {
+                        eq: {
+                            '0%, 100%': { height: '4px' },
+                            '50%': { height: '10px' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-black h-screen w-screen flex items-center justify-center p-4 selection:bg-am-red selection:text-white">
+
+    <!-- Main Window Container -->
+    <div class="flex w-full max-w-[1200px] h-full max-h-[800px] bg-am-main rounded-xl shadow-2xl overflow-hidden border border-white/10 relative">
+
+        <!-- Left Sidebar -->
+        <aside class="w-[240px] flex-shrink-0 bg-gradient-to-b from-[#3a1d26] to-[#251219] flex flex-col border-r border-am-border z-20">
+            
+            <!-- Window Controls (Traffic Lights) -->
+            <div class="flex items-center space-x-2 px-4 pt-4 pb-4">
+                <div class="w-3 h-3 rounded-full bg-[#ff5f56] border border-[#e0443e]"></div>
+                <div class="w-3 h-3 rounded-full bg-[#ffbd2e] border border-[#dea123]"></div>
+                <div class="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29]"></div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="px-4 mb-4">
+                <div class="relative flex items-center bg-black/20 rounded-md border border-white/5 overflow-hidden">
+                    <svg class="w-3.5 h-3.5 text-am-text absolute left-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input type="text" placeholder="Search" class="w-full bg-transparent text-white text-[13px] py-1.5 pl-8 pr-3 focus:outline-none placeholder-am-text/70">
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex-1 overflow-y-auto px-2 space-y-6 pb-6 text-[13px] font-medium">
+                
+                <!-- Apple Music Group -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-am-text/70 px-2 mb-1.5 tracking-wider">Apple Music</h3>
+                    <ul class="space-y-0.5">
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z"/></svg>
+                                <span>New</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="currentColor"><path d="M3.24 6.15C2.51 6.43 2 7.17 2 8v12a2 2 0 002 2h16a2 2 0 002-2V8c0-.83-.51-1.57-1.24-1.85L12 3.8 3.24 6.15zM12 18a3 3 0 110-6 3 3 0 010 6zm0-8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>
+                                <span>Radio</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Library Group -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-am-text/70 px-2 mb-1.5 tracking-wider">Library</h3>
+                    <ul class="space-y-0.5">
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <span>Recently Added</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>
+                                <span>Artists</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>Albums</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                                <span>Songs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center px-2 py-1.5 text-gray-200 rounded-md hover:bg-am-hover group">
+                                <svg class="w-4 h-4 mr-2.5 text-am-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><path d="M17 2l-5 5-5-5"/></svg>
+                                <span>Music Videos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Playlists Group -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-am-text/70 px-2 mb-1.5 tracking-wider">Playlists</h3>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Right Main Area -->
+        <main class="flex-1 flex flex-col min-w-0 relative z-10 bg-am-main">
+            
+            <!-- Top Toolbar -->
+            <header class="h-[52px] border-b border-am-border flex items-center px-4 bg-am-top flex-shrink-0">
+                
+                <!-- Playback Controls -->
+                <div class="flex items-center space-x-5 text-[#c1c1c6] w-1/4">
+                    <!-- Shuffle -->
+                    <button class="hover:text-white transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button>
+                    <!-- Prev -->
+                    <button class="hover:text-white transition"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
+                    <!-- Pause -->
+                    <button class="text-white hover:scale-105 transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg></button>
+                    <!-- Next -->
+                    <button class="hover:text-white transition"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></button>
+                    <!-- Repeat -->
+                    <button class="hover:text-white transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg></button>
+                </div>
+
+                <!-- Now Playing Widget -->
+                <div class="flex-1 flex justify-center min-w-0 px-4">
+                    <div class="flex items-center bg-am-widget border border-white/10 rounded-[4px] h-[38px] w-full max-w-[420px] px-2 space-x-3 overflow-hidden shadow-sm">
+                        <!-- Tiny Album Art -->
+                        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=100&h=100&fit=crop" class="w-7 h-7 rounded-[2px] flex-shrink-0 object-cover opacity-80" alt="Cover">
+                        
+                        <div class="flex flex-col flex-1 min-w-0 justify-center pb-0.5">
+                            <div class="flex items-center justify-center space-x-1">
+                                <span class="text-[12px] text-gray-200 font-medium truncate">Cornfield Chase</span>
+                                <svg class="w-2.5 h-2.5 text-am-text" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <div class="text-[10px] text-am-text truncate text-center mt-[-2px]">Hans Zimmer &mdash; Interstellar (Original Motion Picture Soundtrack)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Controls (Volume, Lyrics, Up Next) -->
+                <div class="flex items-center justify-end space-x-4 w-1/4 text-am-text">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                        <!-- Slider -->
+                        <div class="w-16 h-1 bg-white/20 rounded-full relative cursor-pointer">
+                            <div class="absolute left-0 top-0 bottom-0 w-[70%] bg-[#c1c1c6] rounded-full"></div>
+                        </div>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    </div>
+                    
+                    <button class="bg-[#2c1c21] p-1.5 rounded text-am-red">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                    </button>
+                    
+                    <button class="hover:text-white transition">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto pb-12">
+                
+                <!-- Back Button Area -->
+                <div class="px-6 py-4">
+                    <button class="text-am-text hover:text-white transition bg-am-active/50 rounded p-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                </div>
+
+                <!-- Album Header Section -->
+                <div class="px-8 flex items-end space-x-6 mb-8 mt-2">
+                    
+                    <!-- Simulated "Essentials" Album Art -->
+                    <div class="w-56 h-56 rounded-[8px] overflow-hidden shadow-[0_12px_30px_rgba(0,0,0,0.6)] relative bg-[#9ac7da] flex-shrink-0 group">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop" class="absolute bottom-0 w-full h-[85%] object-cover object-top mix-blend-luminosity opacity-90" alt="Hans Zimmer">
+                        <div class="absolute inset-0 bg-gradient-to-b from-[#9ac7da] via-[#9ac7da]/50 to-transparent h-[40%]"></div>
+                        <div class="absolute top-4 left-4 text-black font-bold text-[32px] leading-none tracking-tighter">Essentials</div>
+                        <div class="absolute top-4 right-4 text-black font-bold text-[11px] flex items-center tracking-tight">
+                           <svg class="w-3 h-3 mr-0.5" fill="currentColor" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>Music
+                        </div>
+                    </div>
+
+                    <!-- Header Text & Actions -->
+                    <div class="flex-1 flex flex-col justify-end pb-1">
+                        <h1 class="text-[32px] font-bold tracking-tight text-white mb-0.5">Hans Zimmer Essentials</h1>
+                        <h2 class="text-[20px] text-gray-300 font-medium mb-4">Apple Music</h2>
+                        <p class="text-[13px] text-am-text leading-relaxed max-w-2xl mb-4 pr-10">
+                            This composer came to prominence in Hollywood before the superhero reboot craze. But his skill in marrying brooding lyricism with gripping intensity has been well suited to starker takes on the blockbuste<span class="font-bold text-gray-200 cursor-pointer"> MORE</span>
+                        </p>
+                        
+                        <div class="flex items-center space-x-3">
+                            <button class="bg-am-red hover:bg-am-redhover transition text-white px-5 py-1.5 rounded-md font-semibold text-[13px] flex items-center space-x-2">
+                                <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg>
+                                <span>Play</span>
+                            </button>
+                            <button class="bg-am-red hover:bg-am-redhover transition text-white px-5 py-1.5 rounded-md font-semibold text-[13px] flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+                                <span>Shuffle</span>
+                            </button>
+                            <div class="flex-1"></div>
+                            <button class="bg-am-active hover:bg-white/20 transition text-am-red px-4 py-1.5 rounded-md font-semibold text-[13px] flex items-center space-x-1.5">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+                                <span>Add</span>
+                            </button>
+                            <button class="bg-am-active hover:bg-white/20 transition text-gray-300 w-8 h-[30px] rounded-md flex items-center justify-center">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tracklist Section -->
+                <div class="w-full px-8">
+                    
+                    <!-- Table Header -->
+                    <div class="flex items-center text-[12px] text-am-text border-b border-white/5 pb-2 mb-2 font-medium">
+                        <div class="w-[45%] pl-4">Song</div>
+                        <div class="w-[40%]">Artist</div>
+                        <div class="w-[15%] text-right pr-4">Time</div>
+                    </div>
+
+                    <!-- Tracks Container -->
+                    <div class="space-y-[2px]">
+                        
+                        <!-- Track 1 (Active/Playing) -->
+                        <div class="flex items-center text-[13px] bg-am-red text-white rounded-[5px] py-1.5 px-4 cursor-default group shadow-sm">
+                            <div class="w-[45%] flex items-center pr-4">
+                                <div class="w-[34px] h-[34px] rounded-[3px] overflow-hidden mr-3 relative flex-shrink-0 bg-black/20">
+                                    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-50 mix-blend-luminosity" alt="Interstellar">
+                                    <!-- Animated EQ -->
+                                    <div class="absolute inset-0 flex items-center justify-center space-x-[2px]">
+                                        <div class="w-[2px] h-[6px] bg-white rounded-full animate-eq-1"></div>
+                                        <div class="w-[2px] h-[10px] bg-white rounded-full animate-eq-2"></div>
+                                        <div class="w-[2px] h-[4px] bg-white rounded-full animate-eq-3"></div>
+                                    </div>
+                                </div>
+                                <span class="font-medium truncate">Cornfield Chase</span>
+                            </div>
+                            <div class="w-[40%] truncate text-white/90">Hans Zimmer</div>
+                            <div class="w-[15%] flex items-center justify-end space-x-3">
+                                <span class="text-[12px]">2:07</span>
+                                <button class="focus:outline-none">
+                                    <svg class="w-4 h-4 fill-current opacity-90" viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Track 2 -->
+                        <div class="flex items-center text-[13px] text-gray-200 hover:bg-am-hover rounded-[5px] py-1.5 px-4 cursor-default group transition-colors">
+                            <div class="w-[45%] flex items-center pr-4">
+                                <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?w=100&h=100&fit=crop" class="w-[34px] h-[34px] rounded-[3px] object-cover mr-3 flex-shrink-0 opacity-80" alt="F1">
+                                <span class="truncate">F1</span>
+                            </div>
+                            <div class="w-[40%] text-am-text truncate group-hover:text-gray-300 transition-colors">Hans Zimmer</div>
+                            <div class="w-[15%] flex items-center justify-end space-x-3 text-am-text">
+                                <span class="text-[12px] group-hover:hidden">3:14</span>
+                                <span class="text-[12px] hidden group-hover:block">3:14</span>
+                                <button class="focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <svg class="w-4 h-4 fill-am-red" viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Track 3 -->
+                        <div class="flex items-center text-[13px] text-gray-200 hover:bg-am-hover rounded-[5px] py-1.5 px-4 cursor-default group transition-colors">
+                            <div class="w-[45%] flex items-center pr-4">
+                                <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=100&h=100&fit=crop" class="w-[34px] h-[34px] rounded-[3px] object-cover mr-3 flex-shrink-0 opacity-80" alt="Inception">
+                                <span class="truncate">Time</span>
+                            </div>
+                            <div class="w-[40%] text-am-text truncate group-hover:text-gray-300 transition-colors">Hans Zimmer</div>
+                            <div class="w-[15%] flex items-center justify-end space-x-3 text-am-text">
+                                <span class="text-[12px] group-hover:hidden">4:36</span>
+                                <span class="text-[12px] hidden group-hover:block">4:36</span>
+                                <button class="focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <svg class="w-4 h-4 fill-am-red" viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Track 4 -->
+                        <div class="flex items-center text-[13px] text-gray-200 hover:bg-am-hover rounded-[5px] py-1.5 px-4 cursor-default group transition-colors">
+                            <div class="w-[45%] flex items-center pr-4">
+                                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=100&h=100&fit=crop" class="w-[34px] h-[34px] rounded-[3px] object-cover mr-3 flex-shrink-0 opacity-80" alt="No Time for Caution">
+                                <span class="truncate">No Time for Caution</span>
+                            </div>
+                            <div class="w-[40%] text-am-text truncate group-hover:text-gray-300 transition-colors">Hans Zimmer</div>
+                            <div class="w-[15%] flex items-center justify-end space-x-3 text-am-text">
+                                <span class="text-[12px] group-hover:hidden">4:06</span>
+                                <span class="text-[12px] hidden group-hover:block">4:06</span>
+                                <button class="focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <svg class="w-4 h-4 fill-am-red" viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
