@@ -15,8 +15,8 @@ nav.header {
     border-bottom: 1px solid transparent; /* Set a transparent border */
     border-image: linear-gradient(to right, hsla(33, 97%, 60%, 1), hsla(330, 99%, 62%, 1), hsla(267, 96%, 63%, 1)) 1;
     border-image-slice: 1; /* Slices the image into a single piece to cover the border area */
-    position: sticky;
-    top: 0;
+    position: fixed;
+    /* top: 0; */
     display: flex;
     flex-direction: row;
     align-items: center;  

@@ -3,7 +3,8 @@
 -------------------------------------------------- */
 
 section#page-title {
-    margin-top: 2rem;
+    /* margin-top: 2rem; Once I changed sticky to fixed, this had to become 6*/
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
