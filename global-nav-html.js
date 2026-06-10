@@ -39,7 +39,7 @@ const literal = `<nav class="header">
     </div>
     <div class="logo">
         <a href="index.html"><img loading="lazy" src="media/thumbnail-32px.png" alt="Faith Kenny's avatar">
-        <p>F. Kenny</p>
+        <p>Kenny</p>
         </a>
     </div>
 
@@ -52,7 +52,7 @@ const literal = `<nav class="header">
         <li><a href="">About me</a></li>
         </ul> -->
         <ul class="nav-links">
-        <li><a href="https://iamfaithkenny.framer.website" target="_blank" rel="noopener noreferrer">Old portfolio</a></li>
+        <li><a href="https://iamfaithkenny.framer.website" target="_blank" rel="noopener noreferrer">2021 - 2024 portfolio</a></li>
         <li class="divider">|</li>
         <li><a href="about.html">About me</a></li>
         <li class="divider">|</li>
@@ -62,7 +62,7 @@ const literal = `<nav class="header">
         <!-- <li class="divider">|</li> -->
         <!-- <li><a href="">Work for previous employers</a></li> -->
         <!-- <li class="divider">|</li> -->
-        <li><a>+1 (415) 312-7406</a></li>
+        <!-- <li><a>+1 (415) 312-7406</a></li> -->
         </ul>
         <div class="btns"><button class="email">Copy email</button></div>
     </aside>
