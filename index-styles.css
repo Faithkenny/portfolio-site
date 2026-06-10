@@ -3,7 +3,7 @@
 -------------------------------------------------- */
 
 section#page-title {
-    /* margin-top: 2rem; Once I changed sticky to fixed, this had to become 6*/
+    /* margin-top: 2rem; Once I changed nav.header in nav-global-desktop.css from sticky to fixed, this had to become 6*/
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -363,116 +363,12 @@ footer ul {
     max-width: 796px;
 }
 
-
-nav.header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    justify-content: space-between;
-    margin: 0;
-}
- .logo {
-    display: flex;
-    flex-direction: row;
-    gap: 0.6rem;
-    align-items: center;
-    flex: 0 1 auto;
-    margin-left: 1.6rem;
-}
-.logo img {
-    border-radius: 999px;
-    width: 2rem;
-    height: 2rem;
-    border: 0.2rem solid var(--border-nav-logo-img);
-    display: block;
-}
-
-.btns {
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
- 
-}
-.btns button {
-    font-size: 1.2rem;
-    font-weight: 700;
-    background-color: var(--surface-cta);
-    padding: 0.5rem 1.0rem;
-    display: flex;
-    width: 9rem;
-    justify-content: center;
-    border-radius: 0.4rem;
-    color: var(--text-nav-cta);
-}
-.btns button {
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-
-.btns button.is-changing {
-  opacity: 0;
-  transform: scale(0.98);
-}
-
-.left-icon, .right-icon {
-    display: flex;
-    width: 24px;
-    height: 24px;
-    padding: 4px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    stroke: var(--border-nav-icon);
-    background-color: none; /* This is hardcoded in Javascript ropa.js */
-}
-.hide-icon {
-    display: none;
-}
-.show-icon {
-    display: block;
-}
-
-
-aside {
-    display: none;
-}    
-.dropdown-menu-wrapper {
-    position: fixed;
-    width: 100%;
-    top: 45px;
-    display: none;
-    z-index: 999;
-}
-ul.dropdown-menu {
-    display: flex;
-    background-color: var(--surface-ul);
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: flex-start;
-    list-style-type: none;
-    /* border: 1px solid blue; */
-    width: 100%;
-}
-ul.dropdown-menu li {
-    text-decoration: none;  
-    font-size: 1.4rem;
-    padding: 1.6rem;
-    border-bottom: 1px solid var(--border-ul-li);
-    width: 100%;
-    z-index: 1000;
-}
-ul.dropdown-menu li a {
-    text-decoration: none;
-    color: var(--text-nav-ul-li-a-darker);
-}
-
+/* Header/Nav styles are in nav-global-mobile.css */
 
 section#page-title {
-    margin: 1.6rem 0 0.4rem;
+    /* margin: 1.6rem 0 0.4rem; Once I changed nav.header in nav-global-mobile.css from sticky to fixed, 1.6 had to become 5.6 */
+
+    margin: 5.6rem 0 0.4rem;
 }
 h1 {
     font-size: 1.6rem;
