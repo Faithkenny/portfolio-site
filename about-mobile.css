@@ -47,7 +47,11 @@
     gap: 0.4rem;
     text-align: center;
 
-    margin-top: 1rem;
+    /* margin-top: 1rem; Has to change since I made the nav.header in the nav-global-desktop.css sticky*/
+
+    margin-top: 4.8rem;
+
+
     width: 274px;
     max-width: 80%;
     /* border: 1px solid red; */
@@ -96,6 +100,7 @@ main {
     gap: 0.2rem;
     margin-bottom: 1.8rem;
     flex: 1 1 0;
+    text-align: center;
 }
 .point div.main-story {
     display: flex;

@@ -51,7 +51,10 @@
     text-align: center;
     /* border: 1px solid red; */
 
-    margin-top: 1rem;
+    /* margin-top: 1rem; Has to change since I made the nav.header in the nav-global-desktop.css sticky*/
+
+    margin-top: 4rem;
+    
     /* width: 274px; */
 }
 .title h1 {
