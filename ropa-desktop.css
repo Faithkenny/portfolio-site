@@ -68,6 +68,9 @@ h1.page-title {
 .s-01 img {
     max-width: 96%;
 }
+.s-01 video {
+    width: 96%;
+}
 p.outcome {
     color: var(--text-s-04-p);
     font-size: 1.6rem;

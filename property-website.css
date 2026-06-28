@@ -1,0 +1,13 @@
+.light-border {
+    border: 1px solid #f0f0f0;
+    border-radius: 0.8rem;
+}
+
+.gap-4 {
+    /* gap: 0.4rem; */
+    margin-bottom: 1.2rem;
+}
+
+.remove-bg-color {
+    background-color: white !important;
+}
