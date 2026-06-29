@@ -36,6 +36,15 @@ h1 {
     /* display: none; */
 }
 
+#page-title p a {
+    color: var(--text-s-01-page-title-p);
+    line-height: 1.8rem;
+    letter-spacing: -0.25px;
+    text-align: center;
+    margin-top: 0;
+    /* display: none; */
+}
+
 
 
 /* Projects
