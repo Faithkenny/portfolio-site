@@ -11,3 +11,22 @@
 .remove-bg-color {
     background-color: white !important;
 }
+
+.live-site {
+    position: fixed;
+    top: 22%;
+    right: 10%;
+}
+
+.live-site-mobile {
+    padding: 0.4rem 1.2rem;
+    background-color: #00ddff;
+    width: fit-content !important;
+    border-radius: 0.4rem;
+}
+
+.live-site-mobile a {
+    text-decoration: none;
+    color: var(--text-nav-cta);
+
+}

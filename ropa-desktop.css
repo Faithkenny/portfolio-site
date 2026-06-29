@@ -489,3 +489,7 @@ video, iframe {
 .lightbox-overlay {
     display: none;
 }
+
+.hide-on-desktop {
+    display: none;
+}
