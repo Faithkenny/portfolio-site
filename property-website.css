@@ -14,7 +14,7 @@
 
 .live-site {
     position: fixed;
-    top: 22%;
+    top: 16%;
     right: 10%;
 }
 
@@ -29,4 +29,8 @@
     text-decoration: none;
     color: var(--text-nav-cta);
 
+}
+
+.product-goal-details p a {
+    color: var(--cta-color);
 }
