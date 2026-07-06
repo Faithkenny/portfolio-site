@@ -4,7 +4,7 @@
 
 section#page-title {
     /* margin-top: 2rem; Once I changed nav.header in nav-global-desktop.css from sticky to fixed, this had to become 6*/
-    margin-top: 6rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ h1 {
 /* Projects
 -----------------------------------------------*/
 main{
-    margin-top: 2rem;
+    margin-top: 3rem;
     max-width: 1190px;
     display: flex;
     flex-direction: row;
