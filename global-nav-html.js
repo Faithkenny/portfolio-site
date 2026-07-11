@@ -52,7 +52,7 @@ const literal = `<nav class="header">
         <li><a href="">About me</a></li>
         </ul> -->
         <ul class="nav-links">
-        <li><a href="https://iamfaithkenny.framer.website" target="_blank" rel="noopener noreferrer">2021 - 2024 portfolio</a></li>
+        <li><a href="https://iamfaithkenny.framer.website" target="_blank" rel="noopener noreferrer">Pre-AI Desktop + Web SaaS work</a></li>
         <li class="divider">|</li>
         <li><a href="about.html">About me</a></li>
         <li class="divider">|</li>
