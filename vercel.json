@@ -1,4 +1,16 @@
 {
-    "cleanUrls": true
-  }
-  
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "work.iamfaithkenny.com"
+        }
+      ],
+      "destination": "https://iamfaithkenny.framer.website",
+      "permanent": true
+    }
+  ]
+}
