@@ -11,6 +11,28 @@
       ],
       "destination": "https://iamfaithkenny.framer.website",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "v2.iamfaithkenny.com"
+        }
+      ],
+      "destination": "https://iamfaithkenny.com",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "v1.iamfaithkenny.com"
+        }
+      ],
+      "destination": "https://iamfaithkenny.framer.website",
+      "permanent": true
     }
   ]
 }
